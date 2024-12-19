@@ -1,18 +1,18 @@
 @font-face {
-  font-family: 'Inter';
-  src: url("assets/fonts/Inter-SemiBold.otf");
+  font-family: Inter;
+  src: url(../fonts/Inter-SemiBold.woff2);
 }
 
 @font-face {
-  font-family: 'Grotesk';
-  src: url("assets/fonts/FoundersGrotesk-Bold.otf");
+  font-family: Grotesk;
+  src: url(../fonts/founders-grotesk-bold.woff2) format('woff2');
 }
 
 @font-face {
   font-family: 'Monument';
-  src: url("assets/fonts/MonumentExtended-Regular.otf");
+  src: url("/assets/fonts/MonumentExtended-Regular.woff2") format('woff2');
   font-weight: 500;
-  font-style: normal;
+  font-style: normal
 }
 
 :root {
