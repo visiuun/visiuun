@@ -1,16 +1,16 @@
 @font-face {
   font-family: Inter;
-  src: url(/portfolio/assets//fonts/Inter-SemiBold.otf);
+  src: url("/assets/fonts/Inter-SemiBold.otf");
 }
 
 @font-face {
   font-family: Grotesk;
-  src: url(/portfolio/assets/fonts/FoundersGrotesk-Bold.otf);
+  src: url("/assets/fonts/FoundersGrotesk-Bold.otf");
 }
 
 @font-face {
   font-family: 'Monument';
-  src: url("/portfolio/assets/fonts/MonumentExtended-Regular.otf");
+  src: url("/assets/fonts/MonumentExtended-Regular.otf");
   font-weight: 500;
   font-style: normal
 }
