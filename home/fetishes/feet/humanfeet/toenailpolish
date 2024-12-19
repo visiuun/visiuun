@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toenail Polish</title>
+    <link rel="stylesheet" href="/data/Styles/fetishes.css">
+    <script>
+        // Display the popup when the page loads
+        document.addEventListener("DOMContentLoaded", () => {
+            const popup = document.querySelector(".popup-overlay");
+            const acceptButton = document.querySelector(".popup-accept");
+            const declineButton = document.querySelector(".popup-decline");
+
+            // Accept button dismisses the popup
+            acceptButton.addEventListener("click", () => {
+                popup.style.display = "none";
+            });
+
+            // Decline button redirects to homepage
+            declineButton.addEventListener("click", () => {
+                window.location.href = "/home";
+            });
+        });
+    </script>
+</head>
+<body>
+ <!-- Background Image -->
+    <div class="background"></div>
+
+    <!-- Dark Overlay for Background -->
+    <div class="overlay"></div>
+
+        <!-- Popup -->
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <h2>Sensitive Content Warning</h2>
+            <p>This page contains sensitive content. You must be 18 or older to proceed.</p>
+            <button class="popup-accept">I am 18 or older</button>
+            <button class="popup-decline">Take me back home</button>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Visiuun</div>
+        <nav>
+            <a href="/home/privacy">Privacy Policy</a>
+            <a href="/home/terms">Terms Of Service</a>
+            <a href="/home/login" class="profile-link">
+                <img src="https://visiuun.altervista.org/data/Landing/profile.png" alt="Profile Picture" class="profile-pic">
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="introduction">
+            <h1>Toenail Polish</h1>
+            <p>Toenail polish has a versatile appeal, ranging from classic elegance to bold, fetishistic designs. Polished toenails not only enhance the visual appeal of feet but also serve as a canvas for self-expression and creativity. In fetish art, toenail polish can symbolize everything from dominance to playful sensuality, making it a cornerstone of aesthetic allure.</p>
+            <figure>
+                <img src="https://files.catbox.moe/2n3ol5.jpg" alt="Black Toenail Polish">
+                <figcaption>A classic black polish highlights dominance and elegance. - Art by rito</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <section id="details">
+            <h2>Detailed Descriptions</h2>
+            <p>The artistry of toenail polish is reflected in various elements, including:</p>
+            <ul>
+                <li><strong>Color Choices:</strong> From bold reds and blacks to pastel pinks and metallic shades, each color evokes a unique mood and aesthetic.</li>
+                <li><strong>Finish:</strong> Polishes can have a glossy, matte, or glittery finish, each offering a different texture and shine.</li>
+                <li><strong>Designs:</strong> Nail art, such as stripes, floral patterns, or abstract shapes, can be incorporated for added flair.</li>
+                <li><strong>Seasonal Themes:</strong> Colors and designs often align with holidays or seasons, such as dark shades for autumn or bright pastels for spring.</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="examples">
+            <h2>Examples</h2>
+            <p>Toenail polish is featured prominently in these scenarios:</p>
+            <ul>
+                <li><strong>Giantess Art:</strong> Vibrant polish emphasizes the scale and allure of giant feet.</li>
+                <li><strong>Foot Worship:</strong> Polished nails draw attention to the toes, enhancing their appeal.</li>
+                <li><strong>Domination Themes:</strong> Bold colors like black or red signify power and control.</li>
+                <li><strong>Everyday Beauty:</strong> Subtle shades like nude or pastel pinks highlight natural elegance.</li>
+            </ul>
+            <figure>
+                <img src="https://wimg.rule34.xxx//images/1686/d0e9efbcecabfffdfcd68c96e4cdeec0.jpeg?11693185" alt="Pink Toenails Example">
+                <figcaption>pink nails in feet art. - Art by kikimifukuri</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <section id="artists">
+            <h2>Featured Artists</h2>
+            <p>Notable creators who excel in depicting polished toenails include:</p>
+            <ul>
+                <li><a href="https://www.pixiv.net/en/users/15769844" target="_blank" class="artist-link">lululewd</a></li>
+                <li><a href="https://x.com/chimerami2" target="_blank" class="artist-link">chimerami2</a></li>
+                <li><a href="https://rule34.xxx/index.php?page=profile&u=flexdesign" target="_blank" class="artist-link">flexdesign</a></li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="appeal">
+            <h2>Appeal</h2>
+            <p>The appeal of toenail polish lies in its ability to transform the feet into a statement of beauty, dominance, or playfulness. The vibrant hues and intricate designs make polished toenails a focal point, capturing attention and admiration in both casual and fetish contexts.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Visiuun. All Rights Reserved.</p>
+        <p><a href="/home/contact">Contact Us</a> | <a href="/home/terms">Terms</a> | <a href="/home/privacy">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
+<script src="/data/Scripts/JS/cookies.js"></script>

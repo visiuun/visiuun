@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long/Sharp Toenails</title>
+     <link rel="stylesheet" href="/data/Styles/fetishes.css">
+    <script>
+        // Display the popup when the page loads
+        document.addEventListener("DOMContentLoaded", () => {
+            const popup = document.querySelector(".popup-overlay");
+            const acceptButton = document.querySelector(".popup-accept");
+            const declineButton = document.querySelector(".popup-decline");
+
+            // Accept button dismisses the popup
+            acceptButton.addEventListener("click", () => {
+                popup.style.display = "none";
+            });
+
+            // Decline button redirects to homepage
+            declineButton.addEventListener("click", () => {
+                window.location.href = "/home";
+            });
+        });
+    </script>
+</head>
+<body>
+ <!-- Background Image -->
+    <div class="background"></div>
+
+    <!-- Dark Overlay for Background -->
+    <div class="overlay"></div>
+
+        <!-- Popup -->
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <h2>Sensitive Content Warning</h2>
+            <p>This page contains sensitive content. You must be 18 or older to proceed.</p>
+            <button class="popup-accept">I am 18 or older</button>
+            <button class="popup-decline">Take me back home</button>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Visiuun</div>
+        <nav>
+            <a href="/home/privacy">Privacy Policy</a>
+            <a href="/home/terms">Terms Of Service</a>
+            <a href="/home/login" class="profile-link">
+                <img src="https://visiuun.altervista.org/data/Landing/profile.png" alt="Profile Picture" class="profile-pic">
+            </a>
+        </nav>
+    </header>
+
+ <!-- Main Content -->
+    <main>
+        <section id="introduction">
+            <h1>Long/Sharp Toenails</h1>
+            <p>Long and sharp toenails are an alluring feature often found in fetish art, particularly for their sharpness and intense aesthetic appeal. These nails can be seen as symbols of dominance, power, and vulnerability, depending on their portrayal. Artists often use long, sharp nails to emphasize the curvature and sharpness of the feet, creating a blend of sensuality and danger.</p>
+            <figure>
+                <img src="https://wimg.rule34.xxx//images/2198/84ed3b2134fd9bd8874286d65956ddca.jpeg?11698963" alt="Example of Long/Sharp Toenails">
+                <figcaption>Sharp toenails in a sensual and dominant pose. - Art by qizhu</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <section id="details">
+            <h2>Detailed Descriptions</h2>
+            <p>Long and sharp toenails are characterized by their elongated, pointed shapes, often exaggerated for dramatic effect. These toenails may be polished or left bare, depending on the desired aesthetic. The sharpness of the nails creates an intense visual effect, often symbolizing power or danger. Key characteristics include:</p>
+            <ul>
+                <li><strong>Length:</strong> Often extended beyond the natural shape of the toe, creating an elegant yet threatening appearance.</li>
+                <li><strong>Sharpness:</strong> The nails are often tapered to a fine point, enhancing their visual impact.</li>
+                <li><strong>Color:</strong> Typically painted in bold colors such as red, black, or metallics to emphasize their dominance and allure.</li>
+                <li><strong>Highlighting:</strong> The nails are often the focal point of the foot, with light and shadow accentuating their sharpness.</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="examples">
+            <h2>Examples</h2>
+            <p>Long and sharp toenails are commonly featured in the following contexts:</p>
+            <ul>
+                <li><strong>Giantess Themes:</strong> The nails are used to emphasize dominance, such as stepping on or crushing small objects.</li>
+                <li><strong>Foot Worship:</strong> Often depicted in scenarios where the sharpness of the nails enhances the submissive nature of the interaction.</li>
+                <li><strong>Stomping:</strong> Sharp toenails add a level of danger when paired with stomping imagery, heightening the intensity of the scene.</li>
+                <li><strong>Roleplay and Fantasy:</strong> Long, sharp toenails create a powerful visual in fantasy settings, symbolizing the dominance and power of the character.</li>
+            </ul>
+            <figure>
+                <img src="https://files.catbox.moe/dceumr.jpg" alt="Sharp Toenails Example">
+                <figcaption>Sharp toenails used in a giantess scene. - Art by pippers02</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <section id="artists">
+            <h2>Featured Artists</h2>
+            <p>Some of the most notable artists who specialize in depicting long and sharp toenails include:</p>
+            <ul>
+                <li><a href="https://www.pixiv.net/en/users/15769844" class="artist-link" target="_blank">lululewd</a></li>
+                <li><a href="https://www.pixiv.net/en/users/9987176" class="artist-link" target="_blank">Bubmoni</a></li>
+                <li><a href="https://x.com/kentaryu4?lang=en" class="artist-link" target="_blank">kentaryu</a></li>
+                <li><a href="https://www.pixiv.net/en/users/22145120/illustrations" class="artist-link" target="_blank">qizhu</a></li>
+                <li><a href="https://x.com/PippersAD" class="artist-link" target="_blank">pippers02</a></li>
+            </ul>
+            <figure>
+                <img src="https://n1.kemono.su/data/76/d5/76d526db7f67cc7e864fa301f490365b1c26090aeb1a94d07dceaecd137d07fa.png?f=1000006908.png" alt="Art by bubmoni">
+                <figcaption>Featured art of sharp toenails in a worshipping drawing. - Art by bubmoni</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <section id="cultural-relevance">
+            <h2>Cultural and Artistic Relevance</h2>
+            <p>The depiction of long and sharp toenails carries symbolic weight, often representing power, control, and fear. In some cultures, sharp objects are associated with strength, precision, and even danger, all of which are conveyed through these exaggerated features in art and fetish contexts.</p>
+        </section>
+        <hr>
+
+        <section id="appeal">
+            <h2>Appeal</h2>
+            <p>The appeal of long and sharp toenails lies in their contrast between beauty and danger. Their length and sharpness invoke a sense of both sensuality and threat, making them a powerful tool for those who enjoy dominance, roleplay, and visual intensity in their fetishes.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Visiuun. All Rights Reserved.</p>
+        <p><a href="/home/contact">Contact Us</a> | <a href="/home/terms">Terms</a> | <a href="/home/privacy">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
+<script src="/data/Scripts/JS/cookies.js"></script>

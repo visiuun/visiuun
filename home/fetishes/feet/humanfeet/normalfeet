@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Normal Feet</title>
+    <link rel="stylesheet" href="/data/Styles/fetishes.css">
+    <script>
+        // Display the popup when the page loads
+        document.addEventListener("DOMContentLoaded", () => {
+            const popup = document.querySelector(".popup-overlay");
+            const acceptButton = document.querySelector(".popup-accept");
+            const declineButton = document.querySelector(".popup-decline");
+
+            // Accept button dismisses the popup
+            acceptButton.addEventListener("click", () => {
+                popup.style.display = "none";
+            });
+
+            // Decline button redirects to homepage
+            declineButton.addEventListener("click", () => {
+                window.location.href = "/home";
+            });
+        });
+
+        // Fetch the image JSON data
+        fetch('https://visiuun.altervista.org/APIS/r34random.php')  // Replace with your PHP script URL
+            .then(response => response.json())
+            .then(data => {
+                // Extract the image URL from the JSON response
+                if (data.random_image_url) {
+                    // Set the background image to the fetched image URL
+                    document.background.style.backgroundImage = `url(${data.random_image_url})`;
+                } else {
+                    console.error('No image found or error fetching data');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+</head>
+<body>
+    <!-- Background Image -->
+    <div class="background"></div>
+
+    <!-- Dark Overlay for Background -->
+    <div class="overlay"></div>
+
+        <!-- Popup -->
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <h2>Sensitive Content Warning</h2>
+            <p>This page contains sensitive content. You must be 18 or older to proceed.</p>
+            <button class="popup-accept">I am 18 or older</button>
+            <button class="popup-decline">Take me back home</button>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">Visiuun</div>
+        <nav>
+            <a href="/home/privacy">Privacy Policy</a>
+            <a href="/home/terms">Terms Of Service</a>
+            <a href="/home/login" class="profile-link">
+                <img src="https://visiuun.altervista.org/data/Landing/profile.png" alt="Profile Picture" class="profile-pic">
+            </a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section id="introduction">
+            <h1>Normal Feet</h1>
+            <p>Normal feet, in their bare and natural state, are a cornerstone of fetish culture, frequently celebrated in anime and artistic communities for their intimate and multifaceted appeal. Whether highlighted in moments of vulnerability, dominance, or casual relaxation, their presence evokes a blend of allure and fascination.</p>
+            <figure>
+                <img src="https://n1.kemono.su/data/bc/e9/bce95c97c9e18a112a83a94e2ed73e25b7706d2683d447f395e1fbdbc35dec43.jpg?f=6.jpg" alt="Example of Normal Feet">
+                <figcaption>Example of a natural, well-drawn feet image.  - Art by 猫打</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <section id="details">
+            <h2>Detailed Descriptions</h2>
+            <p>Normal feet are defined by their smooth, proportional anatomy and subtle details that lend themselves to countless interpretations in fetish contexts. Key features include:</p>
+            <ul>
+                <li><strong>Toes:</strong> Rounded or tapered, often adorned with nail polish or decorations.</li>
+                <li><strong>Soles:</strong> Smooth and tender, with shading emphasizing curves and wrinkles.</li>
+                <li><strong>Arches:</strong> Elegantly curved, adding sensuality to depictions.</li>
+                <li><strong>Skin Details:</strong> Creases and slight imperfections for realism.</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="examples">
+            <h2>Examples</h2>
+            <p>Normal feet are frequently showcased in the following contexts:</p>
+            <ul>
+                <li><strong>Giantess Fetish:</strong> Emphasizing dominance through size and presence.</li>
+                <li><strong>Stomping and Crushing:</strong> Highlighting raw power and interaction.</li>
+                <li><strong>Scent/Smell:</strong> Natural pheromonal allure, clean or exaggerated aromas.</li>
+                <li><strong>Dirty Feet:</strong> Mud or marks for primal appeal.</li>
+                <li><strong>Oiled or Moisturized Feet:</strong> Emphasizing tactile and visual allure.</li>
+                <li><strong>Sweaty or Wet Feet:</strong> Focusing on wet texture.</li>
+            </ul>
+            <figure>
+                <img src="https://files.catbox.moe/qzcq2r.jpg" alt="Example of SweatyFeet">
+                <figcaption>Example of Sweaty Feet Art. - Art by 维什戴尔单推人</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <section id="artists">
+            <h2>Featured Artists</h2>
+            <p>Below are some prominent artists known for their incredible depictions of feet in fetish art. Click their names to view their work:</p>
+            <ul>
+                <li><a href="https://www.patreon.com/onkinky" class="artist-link" target="_blank">OnKinky</a></li>
+                <li><a href="https://www.pixiv.net/en/users/9987176" class="artist-link" target="_blank">维什戴尔单推人</a></li>
+                <li><a href="https://www.pixiv.net/en/users/3259336" class="artist-link" target="_blank">猫打</a></li>
+                <li><a href="https://x.com/bubmoni?lang=en" class="artist-link" target="_blank">Bubmoni</a></li>
+            </ul>
+            <figure>
+                <img src="https://n3.kemono.su/data/fc/6b/fc6be74c2a976fdc887f6884871b00a4cf9400e25c901ff787ad76658c260c17.png?f=gungumgun2.png" alt="Art by OnKinky">
+                <figcaption>Featured giantess foot fetish drawing. - Art by OnKinky</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <section id="cultural-relevance">
+            <h2>Cultural and Artistic Relevance</h2>
+            <p>Feet in anime often symbolize intimacy, connection, and vulnerability. Their depiction in Japanese culture can reflect themes of purity or exposure, making them a key element in emotional or intimate scenes.</p>
+        </section>
+        <hr>
+
+        <section id="appeal">
+            <h2>Appeal</h2>
+            <p>The appeal of normal feet lies in their versatility, with common elements of attraction including dominance, submission, and sensory focus. Whether pristine or rugged, their aesthetic invites viewers to explore every curve, detail, and movement.</p>
+            <figure>
+                <img src="https://files.catbox.moe/olm5sd.png" alt="Appealing Depiction of Feet">
+                <figcaption>Emphasis on the sensual appeal of feet.</figcaption>
+            </figure>
+        </section>
+        <hr>
+
+        <section id="related-topics">
+    <h2>Related Topics</h2>
+    <ul>
+        <li><a href="https://visiuun.altervista.org/home/fetishes/feet/humanfeet/sharptoenails" class="artist-link">Long/Sharp Toenails</a></li>
+        <li><a href="https://visiuun.altervista.org/home/fetishes/feet/humanfeet/toenailpolish" class="artist-link">Nail Polish</a></li>
+        <li><a href="https://visiuun.altervista.org/home/fetishes/feet/humanfeet/giantessfeet" class="artist-link">Giantess Feet</a></li>
+        <li><a href="https://visiuun.altervista.org/home/fetishes/feet/humanfeet/dirtyfeet" class="artist-link">Dirty Feet</a></li>
+        <li><a href="https://visiuun.altervista.org/home/fetishes/feet/humanfeet/feetsmell" class="artist-link">Feet Smell</a></li>
+    </ul>
+</section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 Visiuun. All Rights Reserved.</p>
+        <p><a href="/home/contact">Contact Us</a> | <a href="/home/terms">Terms</a> | <a href="/home/privacy">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
+<script src="/data/Scripts/JS/cookies.js"></script>
