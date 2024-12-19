@@ -5,12 +5,12 @@
 
 @font-face {
   font-family: Grotesk;
-  src: url("/assets/fonts/FoundersGrotesk-Bold.otf");
+  src: url("https://github.com/V1SIONUSE/visiuun/blob/main/assets/fonts/FoundersGrotesk-Bold.otf");
 }
 
 @font-face {
   font-family: 'Monument';
-  src: url("/assets/fonts/MonumentExtended-Regular.otf");
+  src: url("https://github.com/V1SIONUSE/visiuun/blob/main/assets/fonts/MonumentExtended-Regular.otf");
   font-weight: 500;
   font-style: normal
 }
