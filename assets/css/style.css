@@ -1,16 +1,16 @@
 @font-face {
   font-family: 'Inter';
-  src: url("https://v1sionuse.github.io/visiuun/assets/fonts/MonumentExtended-Regular.otf");
+  src: url("assets/fonts/Inter-SemiBold.otf");
 }
 
 @font-face {
   font-family: 'Grotesk';
-  src: url("https://v1sionuse.github.io/visiuun/assets/fonts/FoundersGrotesk-Bold.otf");
+  src: url("assets/fonts/FoundersGrotesk-Bold.otf");
 }
 
 @font-face {
   font-family: 'Monument';
-  src: url("https://v1sionuse.github.io/visiuun/assets/fonts/MonumentExtended-Regular.otf");
+  src: url("assets/fonts/MonumentExtended-Regular.otf");
   font-weight: 500;
   font-style: normal;
 }
