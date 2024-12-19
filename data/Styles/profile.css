@@ -1,0 +1,151 @@
+/* General Reset */
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Background Image for Whole Body */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('https://pic.re/image');
+            background-size: cover;
+            background-position: center;
+            filter: blur(8px);
+            z-index: -2; /* Places background behind all content */
+        }
+
+        /* Dark Overlay for Background */
+        .overlay {
+            position: fixed; /* Fixed to cover the entire viewport */
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: -1; /* Ensures the overlay stays above the background */
+            background-image: url(/data/Generic/noise-light-70.png);
+        }
+
+/* General styling */
+body {
+    background-color: #121212;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #2e2e2e;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #eaeaea;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+label {
+    font-size: 1.1rem;
+    color: #d1d1d1;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    background-color: #3c3c3c;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 12px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 1rem;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+    border-color: #fff;
+    outline: none;
+}
+
+button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 50%;
+    max-width: 200px;
+}
+
+button:hover {
+    background-color: #c3c3c3;
+}
+
+.profile-picture {
+    margin-bottom: 20px;
+}
+
+.preview-pfp {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* Error and success messages */
+.error,
+.success {
+    color: #ff4d4d;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    display: block;
+    text-align: center;
+}
+
+/* For mobile responsiveness */
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="file"],
+    button {
+        width: 100%;
+    }
+}

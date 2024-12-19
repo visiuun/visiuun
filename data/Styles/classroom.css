@@ -1,0 +1,41 @@
+/* Google Classroom Custom Theme */
+:root {
+    --background-color: #1e1e2f; /* Main background */
+    --card-color: #2b2b3d; /* Class cards */
+    --text-color: #ffffff; /* Text color */
+    --accent-color: #000; /* Accent elements */
+    --button-color: #3a3a5b; /* Buttons */
+    --button-hover-color: #000; /* Button hover */
+    --link-color: #000; /* Links */
+}
+
+/* Body background */
+body {
+    background-color: var(--background-color) !important;
+    color: var(--text-color) !important;
+}
+
+.rZXyy.YwNp1:not(.xp2dJ), .rZXyy:not(.u0dx8e):not(.ILo0B):not(.xp2dJ) {
+    border-radius: 20px;
+}
+
+.OjOEXb, .ZizeYd, .O7utsb, .ZmqAt {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.JwPp0e {
+    background-image: url(https://pic.re/image);
+}
+
+.joJglb {
+    border-bottom: none;
+}
+
+.Tabkde {
+ border-right: none;   
+}
+
+.yCa5be {
+    visibility: hidden;
+}

@@ -1,0 +1,124 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensures full width */
+    height: 100%; /* Ensures full height */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Centers the chat horizontally */
+    align-items: center; /* Centers the chat vertically */
+    background-image: url('https://pic.re/image'); /* Set your image URL */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+}
+
+.chat-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.typing-indicator {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #e3f2fd; /* Same as bot message background */
+    max-width: 80%;
+    align-self: flex-start; /* Align the typing indicator to the left */
+}
+
+.typing-indicator span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 2px;
+    background-color: #333;
+    border-radius: 50%;
+    animation: typing 1s infinite ease-in-out both;
+}
+
+.typing-indicator span:nth-child(1) {
+    animation-delay: 0s;
+}
+.typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(0);
+    }
+}
+
+.chat-box {
+    padding: 15px;
+    overflow-y: auto;
+    max-height: 400px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: column; /* Arrange messages in a column */
+}
+
+.chat-message {
+    display: flex; /* Change to flex */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word; /* Ensures long messages wrap correctly */
+}
+
+.bot {
+    background-color: #e3f2fd;
+    align-self: flex-start; /* Align bot messages to the left */
+}
+
+.user {
+    background-color: #d1c4e9;
+    align-self: flex-end; /* Align user messages to the right */
+}
+
+.chat-input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.chat-send-button {
+    background-color: #ff66b2 !important;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.chat-send-button:hover {
+    background-color: #e8569e !important;
+}

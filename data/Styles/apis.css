@@ -1,0 +1,371 @@
+/* Variables */
+:root {
+    /* Dark Mode */
+    --dark-body-bg: #121212;
+    --dark-body-color: #e0e0e0;
+    --dark-navbar-bg: #1c1c1e;
+    --dark-navbar-link: #888;
+    --dark-navbar-link-hover: #fbfbf8;
+    --dark-logo-color: #f0f0f5;
+    --dark-hero-overlay: rgba(0, 0, 0, 0.5);
+    --dark-hero-color: #fbfbf8;
+    --dark-hero-subtext: #b0b0b5;
+    --dark-content-color: #fbfbf8;
+    --dark-endpoint-bg: #1c1c1e;
+    --dark-endpoint-border: #333;
+    --dark-code-block-bg: #292929;
+    --dark-code-color: #e0e0e0;
+    --dark-copy-button-bg: #3a3a3a;
+    --dark-copy-button-hover: #5a5a5a;
+    --dark-footer-bg: #1c1c1e;
+    --dark-footer-color: #888;
+    --dark-footer-link: #fbfbf8;
+    --dark-footer-link-hover: #e0e0e0;
+
+    /* Light Mode */
+    --light-body-bg: #ffffff;
+    --light-body-color: #121212;
+    --light-navbar-bg: #f8f8f8;
+    --light-navbar-link: #333;
+    --light-navbar-link-hover: #000000;
+    --light-logo-color: #121212;
+    --light-hero-overlay: rgba(255, 255, 255, 0.7);
+    --light-hero-color: #121212;
+    --light-hero-subtext: #777777;
+    --light-content-color: #121212;
+    --light-endpoint-bg: #ffffff;
+    --light-endpoint-border: #ccc;
+    --light-code-block-bg: #f4f4f4;
+    --light-code-color: #121212;
+    --light-copy-button-bg: #e0e0e0;
+    --light-copy-button-hover: #d0d0d0;
+    --light-footer-bg: #f8f8f8;
+    --light-footer-color: #555555;
+    --light-footer-link: #121212;
+    --light-footer-link-hover: #000000;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Adjusting Code Blocks to Wrap on Mobile */
+.code-block code {
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* Body Style */
+body {
+    color: var(--light-body-color);
+    background-color: var(--light-body-bg);
+    scroll-behavior: smooth;
+}
+
+a {
+      color: var(--light-content-color); /* Change link color */
+      text-decoration: none; /* Remove underline if desired */
+    }
+    
+a:hover{
+      text-decoration: overline;
+      text-decoration-style: wavy;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: var(--light-navbar-bg);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--light-logo-color);
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    color: var(--light-navbar-link);
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.navbar nav a:hover {
+    color: var(--light-navbar-link-hover);
+}
+
+.logo img {
+    max-width: 65px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    filter: invert(1);
+}
+
+/* Hero Section with Blurred and Lightened Background */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 50vh;
+    color: var(--light-hero-color);
+    position: relative;
+    overflow: hidden;
+    background-image: url(/data/Generic/noise-dark-70.png);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('https://pic.re/image') no-repeat center center / cover;
+    filter: blur(10px);
+    z-index: -2;
+    transform: scale(1.1);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--light-hero-overlay);
+    z-index: -1;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: var(--light-hero-color);
+    z-index: 1;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: var(--light-hero-subtext);
+    z-index: 1;
+}
+
+/* Content Section */
+.content {
+    padding: 60px 5%;
+    text-align: left;
+    color: var(--light-content-color);
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Endpoint */
+.endpoint {
+    background-color: var(--light-endpoint-bg);
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    border: 1px solid var(--light-endpoint-border);
+}
+
+.endpoint h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: var(--light-content-color);
+}
+
+.endpoint p, .endpoint code {
+    font-size: 1em;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* Code and Copy Button */
+.code-block {
+    position: relative;
+    display: block;
+    background-color: var(--light-code-block-bg);
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--light-code-color);
+}
+
+.copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--light-copy-button-bg);
+    color: var(--light-code-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.copy-button:hover {
+    background-color: var(--light-copy-button-hover);
+}
+
+.tester-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--light-copy-button-bg);
+    color: var(--light-code-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.tester-button:hover {
+    background-color: var(--light-copy-button-hover);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--light-footer-bg);
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    color: var(--light-footer-color);
+    border-top-left-radius: 15px; /* Rounded bottom left corner */
+    border-top-right-radius: 15px; /* Rounded bottom right corner */
+}
+
+.footer a {
+    color: var(--light-footer-link);
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    color: var(--light-footer-link-hover);
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: var(--dark-body-color);
+        background-color: var(--dark-body-bg);
+    }
+    
+    a {
+      color: var(--dark-content-color); /* Change link color */
+    }
+
+    .navbar {
+        background-color: var(--dark-navbar-bg);
+    }
+
+    .navbar .logo {
+        color: var(--dark-logo-color);
+    }
+    
+    .logo img {
+    filter: none;
+    }
+
+    .navbar nav a {
+        color: var(--dark-navbar-link);
+    }
+
+    .navbar nav a:hover {
+        color: var(--dark-navbar-link-hover);
+    }
+
+    .hero {
+        color: var(--dark-hero-color);
+        background-image: url(/data/Generic/noise-light-70.png);
+    }
+
+    .hero::after {
+        background-color: var(--dark-hero-overlay);
+    }
+
+    .hero p {
+        color: var(--dark-hero-subtext);
+    }
+    
+    .hero h1 {
+        color: var(--dark-hero-color);
+    }
+
+    .content {
+        color: var(--dark-content-color);
+    }
+
+    .endpoint {
+        background-color: var(--dark-endpoint-bg);
+        border-color: var(--dark-endpoint-border);
+    }
+
+    .endpoint h3 {
+        color: var(--dark-content-color);
+    }
+
+    .code-block {
+        background-color: var(--dark-code-block-bg);
+        color: var(--dark-code-color);
+    }
+
+    .copy-button {
+        background-color: var(--dark-copy-button-bg);
+        color: var(--dark-code-color);
+    }
+
+    .copy-button:hover {
+        background-color: var(--dark-copy-button-hover);
+    }
+    
+    .tester-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--dark-copy-button-bg);
+    color: var(--dark-code-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.8em;
+}
+
+.tester-button:hover {
+    background-color: var(--dark-copy-button-hover);
+}
+
+    .footer {
+        background-color: var(--dark-footer-bg);
+        color: var(--dark-footer-color);
+    }
+
+    .footer a {
+        color: var(--dark-footer-link);
+    }
+
+    .footer a:hover {
+        color: var(--dark-footer-link-hover);
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Polyrhythmic Spiral</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="control-bar-wrapper">
+  <div id="control-bar">
+    <button id="sound-toggle" class="toggle" type="button" data-toggled="false" onClick="handleSoundToggle()" title="Toggle Pulse">
+      <i class="fa-solid fa-music-slash off"></i>
+      <i class="fa-solid fa-music on"></i>
+    </button>
+  </div>
+</div>
+
+<div id="background-image"></div>
+
+<div id="background-filter"></div>
+
+<div id="logo">
+  <img src="https://files.catbox.moe/ggfwsy.png" alt="" />
+</div>
+
+<div id="sound-message">
+  <p>Click anywhere to toggle sound</p>
+</div>
+
+<canvas id="paper"></canvas>
+<!-- partial -->
+  <script src='https://codepen.io/Hyperplexed/pen/xxYJYjM/54407644e24173ad6019b766443bf2a6.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+{
+  "name": "Visiuun",
+  "short_name": "Visiuun",
+  "description": "Visiuun - Explore innovative tools, APIs, and applications.",
+  "start_url": "/home/landing",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "dir": "ltr",
+  "lang": "en",
+  "categories": ["productivity", "utilities", "technology"],
+  "icons": [
+    {
+      "src": "https://visiuun.altervista.org/data/Landing/nekobox.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://visiuun.altervista.org/data/Landing/chatbot.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "https://visiuun.altervista.org/data/Screenshots/homepage.png",
+      "type": "image/png",
+      "sizes": "1440x900"
+    },
+    {
+      "src": "https://visiuun.altervista.org/data/Screenshots/products.png",
+      "type": "image/png",
+      "sizes": "1440x900"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web",
+      "url": "https://visiuun.altervista.org/"
+    }
+  ],
+  "launch_handler": {
+    "client_mode": "navigate-existing"
+  },
+  "shortcuts": [
+    {
+      "name": "Explore Products",
+      "short_name": "Products",
+      "description": "Check out Visiuun's tools and APIs.",
+      "url": "/home/landing#products",
+      "icons": [
+        {
+          "src": "https://visiuun.altervista.org/data/Landing/nekobox.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "APIs Documentation",
+      "short_name": "APIs",
+      "description": "View API documentation.",
+      "url": "/home/apis"
+    }
+  ]
+}
