@@ -821,3 +821,15 @@ footer {
   top: 2px;
   left: -1px;
 }
+
+#mail{
+ text-decoration: underline;
+ text-decoration-style: wavy;
+ transition: text-decoration-color 0.3s ease, transform 0.3s ease;
+}
+
+#mail:hover{
+ text-decoration-color: rgb(49, 91, 250);
+ cursor: pointer;
+ transform: scale(1.2);
+}
