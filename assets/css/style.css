@@ -414,12 +414,14 @@ body {
 .project-image {
   transform: translateX(12%);
   aspect-ratio: 1895 / 1038;
+  object-fit: cover;
 }
 
 .left .project-image {
   grid-column: 2 !important;
   transform: translateX(-12%);
   aspect-ratio: 1895 / 1038;
+  object-fit: cover;
 }
 
 
