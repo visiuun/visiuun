@@ -1,0 +1,37 @@
+/* ------------------------- Big Pixel Cursor ------------------------- */
+
+/* Default cursor */
+* {
+  cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b239d7aeb290a31ac5_cursor-default%402x.svg") 2 0, auto !important;
+}
+
+/* Text cursor */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input[type="text"],
+input[type="email"],
+textarea,
+[data-text] {
+  cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/6714e4e1f367de40becf9029_cursor-text%402x.svg") 9 19, text !important;
+}
+
+/* Hover cursor */
+a,
+a *,
+button,
+button *,
+input[type="submit"],
+input[type="submit"] *,
+input[type="button"],
+input[type="button"] *,
+[data-submit],
+[data-submit] *,
+[data-hover],
+[data-hover] * {
+  cursor: url("https://cdn.prod.website-files.com/6708f85ff3d3cba6aff436fb/671251b212e6b71494aa67ff_cursor-pointer%402x.svg") 12 0, pointer !important;
+}
