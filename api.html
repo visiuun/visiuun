@@ -1,14 +1,425 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="assets/css/redirect.css" rel="stylesheet" type="text/css" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-    <meta http-equiv="refresh" content="0; url=https://visiuun.altervista.org/home/apis">
-    </script>
-</head>
-<body>
-    <p>If you are not redirected, click <a href="https://visiuun.altervista.org/home/apis">here</a>.</p>
-</body>
-</html>
+<div class="wrap">
+  <button id="myButton">
+    <span></span><span></span><span></span>
+    <span>If you are not redirected, click here or press <kbd>G</kbd></span>
+  </button>
+</div>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://unpkg.com/normalize.css') layer(normalize);
+
+@layer normalize, base, demo, rainbow, explode;
+
+@layer explode {
+  *,
+  *::after,
+  *::before {
+    transform-style: preserve-3d;
+  }
+  button span:not(:last-of-type) {
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    border: inherit;
+    opacity: 0;
+  }
+
+  button span:last-of-type {
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  button span:nth-of-type(3) {
+    background: linear-gradient(light-dark(#fff, #000) 0 0) padding-box;
+  }
+  button span:nth-of-type(2) {
+    background: linear-gradient(0deg, #0000 0, var(--border) 18px) border-box;
+  }
+  button span:nth-of-type(1) {
+    background: linear-gradient(#0000 0 0), linear-gradient(#0000 0 0),
+      linear-gradient(in lch longer hue 90deg, var(--base) 0 0) border-box 0 0 /
+        400% 100%;
+  }
+
+  .wrap button::before {
+    transform: translate3d(0, 0, -1px);
+  }
+
+  [data-explode='false'] {
+    .wrap,
+    canvas {
+      transition: transform 1s 1s;
+    }
+
+    .wrap button {
+      transition: outline-color 1s;
+    }
+
+    .wrap button span,
+    .wrap button::before {
+      transition: transform 1s, opacity 0s 1s, outline-color 1s, scale 0.25s;
+    }
+  }
+
+  .wrap button span:nth-of-type(3),
+  .wrap button {
+    outline: 4px dashed #0000;
+  }
+
+  [data-explode='true'] {
+    .wrap,
+    canvas {
+      transform: scale(var(--scale, 1)) rotateX(-32deg) rotateY(45deg)
+        rotateX(90deg);
+      transition: transform 1s;
+    }
+    .wrap button::before {
+      --i: -1;
+    }
+
+    .wrap button {
+      background: none;
+      outline: 4px dashed canvasText;
+      transition: outline-color 1s 1s;
+    }
+
+    .wrap button span,
+    .wrap button::before {
+      opacity: 1;
+      transform: translate3d(0, 0, calc(var(--i) * 50px));
+      transition: scale 0.25s 0.1s, transform 1s 1s, outline-color 1s 1s;
+    }
+
+    .wrap button span:nth-of-type(4) {
+      --i: 4;
+    }
+    .wrap button span:nth-of-type(1) {
+      --i: 1;
+    }
+    .wrap button span:nth-of-type(2) {
+      --i: 2;
+    }
+    .wrap button span:nth-of-type(3) {
+      --i: 3;
+      outline: 4px dashed color-mix(in hsl, canvas, canvasText);
+    }
+  }
+}
+
+@layer rainbow {
+  :root {
+    --base: oklch(70% 0.155 360);
+    --base: hsl(10 90% 70%);
+  }
+  .wrap > button,
+  .wrap > button span:nth-of-type(1),
+  .wrap > button::before,
+  .wrap > button::after {
+    animation-composition: add;
+    animation: rainbow 12s infinite linear,
+      rainbow 6s infinite linear var(--state, paused);
+  }
+
+  .wrap > button {
+    background: linear-gradient(light-dark(#fff, #000) 0 0) padding-box,
+      linear-gradient(0deg, #0000 0, var(--border) 18px) border-box,
+      linear-gradient(in lch longer hue 90deg, var(--base) 0 0) border-box 0 0 /
+        400% 100%;
+  }
+
+  .wrap > button::before {
+    background: linear-gradient(#0000 0 0), linear-gradient(#0000 0 0),
+      linear-gradient(in lch longer hue 90deg, var(--base) 0 0) border-box 0 0 /
+        400% 100%;
+  }
+
+  .wrap > button::after {
+    background: linear-gradient(#0000 0 0) padding-box,
+      linear-gradient(#0000 0 0) border-box,
+      linear-gradient(in lch longer hue 90deg, var(--base) 0 0) border-box 0 0 /
+        400% 100%;
+    mask: linear-gradient(#0000 0 0), linear-gradient(#fff 0 0);
+    mask-clip: padding-box, border-box;
+    mask-composite: intersect;
+  }
+
+  button:is(:hover) {
+    --state: running;
+  }
+
+  @keyframes rainbow {
+    to {
+      background-position: 0 0, 0 0, 400% 0;
+    }
+  }
+}
+
+@layer demo {
+  .wrap:has(:active) {
+    scale: 0.99;
+  }
+
+  .wrap {
+    transition: scale 0.25s;
+  }
+
+  .wrap,
+  canvas {
+    transform: scale(var(--scale, 1));
+  }
+
+  .wrap button {
+    --border: color-mix(in hsl, canvas, canvasText 15%);
+    border-radius: 6px;
+    border: calc(var(--border-width, 2) * 1px) solid #0000;
+    color: color-mix(in hsl, canvasText, canvas 34%);
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 0;
+
+    /* ::after is used as the :focus-visible outline, do not remove */
+    &::after {
+      content: '';
+      position: absolute;
+      border: calc(var(--border-width, 2) * 1px) solid #0000;
+      inset: -8px;
+      border-radius: 14px;
+      opacity: 0;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: -2;
+      filter: blur(calc(var(--blur, 10) * 1px))
+        brightness(var(--brightness, 1.25));
+      inset: 60% 0 0 0;
+      border-radius: 50% 50% 6px 6px / 50% 50% 6px 6px;
+      transform-origin: 50% 25%;
+      opacity: 1;
+      scale: 0.6 0.4;
+      transition: scale 0.24s;
+    }
+
+    kbd {
+      font: inherit;
+      font-size: 0.75em;
+      opacity: var(--active, 0.6);
+      border: 1px solid color-mix(in hsl, canvasText, #0000);
+      padding: 0.2em;
+      border-radius: 4px;
+      letter-spacing: 2px;
+    }
+  }
+
+  button:is(:hover, :focus-visible)::before {
+    scale: 1.1 1.25;
+  }
+
+  button:focus-visible::after {
+    opacity: 0.6;
+  }
+}
+
+@layer base {
+  :root {
+    --font-size-min: 16;
+    --font-size-max: 20;
+    --font-ratio-min: 1.2;
+    --font-ratio-max: 1.33;
+    --font-width-min: 375;
+    --font-width-max: 1500;
+  }
+
+  html {
+    color-scheme: light dark;
+  }
+
+  [data-theme='light'] {
+    color-scheme: light only;
+  }
+
+  [data-theme='dark'] {
+    color-scheme: dark only;
+  }
+
+  :where(.fluid) {
+    --fluid-min: calc(
+      var(--font-size-min) * pow(var(--font-ratio-min), var(--font-level, 0))
+    );
+    --fluid-max: calc(
+      var(--font-size-max) * pow(var(--font-ratio-max), var(--font-level, 0))
+    );
+    --fluid-preferred: calc(
+      (var(--fluid-max) - var(--fluid-min)) /
+        (var(--font-width-max) - var(--font-width-min))
+    );
+    --fluid-type: clamp(
+      (var(--fluid-min) / 16) * 1rem,
+      ((var(--fluid-min) / 16) * 1rem) -
+        (((var(--fluid-preferred) * var(--font-width-min)) / 16) * 1rem) +
+        (var(--fluid-preferred) * var(--variable-unit, 100vi)),
+      (var(--fluid-max) / 16) * 1rem
+    );
+    font-size: var(--fluid-type);
+  }
+
+  *,
+  *:after,
+  *:before {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: light-dark(#fff, #000);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Geist', 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
+      'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
+  }
+
+  body::before {
+    --size: 45px;
+    --line: color-mix(in hsl, canvasText, transparent 70%);
+    content: '';
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background: linear-gradient(
+          90deg,
+          var(--line) 1px,
+          transparent 1px var(--size)
+        )
+        50% 50% / var(--size) var(--size),
+      linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
+        var(--size) var(--size);
+    mask: linear-gradient(-20deg, transparent 50%, white);
+    top: 0;
+    transform-style: flat;
+    pointer-events: none;
+    z-index: -1;
+  }
+
+  .bear-link {
+    color: canvasText;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    width: 48px;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    opacity: 0.8;
+  }
+
+  :where(.x-link, .bear-link):is(:hover, :focus-visible) {
+    opacity: 1;
+  }
+
+  .bear-link svg {
+    width: 75%;
+  }
+
+  /* Utilities */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}
+
+div.tp-dfwv {
+  width: 268px;
+
+  * {
+    text-transform: lowercase;
+  }
+}
+</style>
+
+<script type="module">
+import confetti from 'https://cdn.skypack.dev/canvas-confetti'
+
+const update = () => {
+  document.documentElement.dataset.theme = config.theme
+  document.documentElement.dataset.explode = config.explode
+  document.documentElement.style.setProperty('--scale', config.scale)
+}
+
+const sync = (event) => {
+  if (
+    !document.startViewTransition ||
+    event.target.controller.view.labelElement.innerText !== 'Theme'
+  )
+    return update()
+  document.startViewTransition(() => update())
+}
+
+// cmd + G stuff...
+const CMD = 91
+const MOD = 71
+const G_KEY = 71  // Keycode for "G"
+
+const STATE = {
+  cmd: false,
+  mod: false,
+  g: false
+}
+
+const redirectURL = 'https://visiuun.altervista.org/home/apis';
+const fallbackURL = 'https://visiuun.altervista.org/home/apis';
+const redirectDelay = 1000; // Delay in milliseconds (2 seconds)
+
+const autoRedirect = () => {
+    window.location.href = redirectURL;
+
+    // Fallback redirect in case the first one fails (e.g., due to CSP).  Useful to avoid infinite loop.
+    setTimeout(() => {
+        window.location.href = fallbackURL;
+    }, redirectDelay);
+};
+
+
+
+const handleActivation = (e) => {
+  if (e.keyCode === CMD && !STATE.cmd) STATE.cmd = true
+  if (e.keyCode === MOD && STATE.cmd && !STATE.mod) STATE.mod = true
+  if (e.keyCode === G_KEY && !STATE.g) STATE.g = true
+
+
+  if ((STATE.cmd && STATE.mod) || STATE.g) {
+    e.preventDefault()
+    confetti()
+    document.documentElement.style.setProperty('--active', 1)
+    autoRedirect();
+  }
+}
+
+const unload = (e) => {
+  if (e.keyCode === CMD || e.keyCode === MOD) STATE.cmd = STATE.mod = false
+    if (e.keyCode === G_KEY) STATE.g = false
+  document.documentElement.style.setProperty('--active', 0.6)
+}
+
+document.body.addEventListener('keydown', handleActivation)
+document.body.addEventListener('keyup', unload)
+
+
+const button = document.getElementById('myButton');
+button.addEventListener('click', autoRedirect);
+
+// Initial Auto Redirect (after page load)
+autoRedirect();
+</script>
