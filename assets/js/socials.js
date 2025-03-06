@@ -49,7 +49,7 @@ const App = () => {
   {
     href: "https://www.visiuun.com",
     text: "Portfolio",
-    icon: /*#__PURE__*/React.createElement("i", { className: "fas fa-briefcase fa-lg", style: { color: 'white' } }), // Briefcase Icon
+    icon: /*#__PURE__*/React.createElement("i", { className: "fas fa-home fa-lg", style: { color: 'white' } }), // Briefcase Icon
     imageUrl: "https://visiuun.altervista.org/Nekobox/uploads/C6vnKkOcQf.png" },
 
   {
