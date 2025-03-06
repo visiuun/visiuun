@@ -1,0 +1,328 @@
+:root {
+	--backdrop: hsl(0 0% 60% / 0.12);
+  --radius: 14;
+  --border: 3;
+  --backup-border: var(--backdrop);
+  --size: 200;
+}
+
+article:first-of-type {
+	--base: 50; /* Light blue */
+	--spread: 500;
+	--outer: 1;
+  --saturation: 80;
+  --lightness: 60;
+}
+
+article:nth-of-type(2) {
+    --base: 100; /* Light Purple */
+	--spread: 500;
+	--outer: 1;
+    --saturation: 80;
+    --lightness: 60;
+}
+
+article:nth-of-type(3) {
+    --base: 150; /* Light Teal */
+	--spread: 500;
+	--outer: 1;
+    --saturation: 80;
+    --lightness: 60;
+}
+
+article:nth-of-type(4) {
+    --base: 200; /* Light Green */
+	--spread: 500;
+	--outer: 1;
+    --saturation: 80;
+    --lightness: 60;
+}
+
+article:nth-of-type(5) {
+    --base: 250; /* Light Yellow */
+	--spread: 500;
+	--outer: 1;
+    --saturation: 80;
+    --lightness: 60;
+}
+
+article:nth-of-type(6) {
+    --base: 300; /* Light Orange */
+	--spread: 500;
+	--outer: 1;
+    --saturation: 80;
+    --lightness: 60;
+}
+
+article:nth-of-type(7) {
+    --base: 350; /* Light Red */
+	--spread: 500;
+	--outer: 1;
+    --saturation: 80;
+    --lightness: 60;
+}
+article:last-of-type {
+	--outer: 1;
+	--base: 0; /* Light Pink */
+	--spread: 500;
+    --saturation: 80;
+    --lightness: 60;
+
+}
+
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+body {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+  overflow-x: hidden; /* Prevent horizontal scroll on mobile if needed */
+	background: #000; /* AMOLED Black */
+  font-family: sans-serif;
+  color: hsl(0 0% 80%);
+
+  /* Grid Background Styles with Cursor Gradient */
+  background-image:
+    radial-gradient(
+      circle closest-corner at calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px),
+      rgba(255, 255, 255, 0.05) 0%,
+      transparent 60%
+    ), /* Cursor Gradient Spotlight */
+    linear-gradient(to right, rgba(150, 150, 150, 0.2) 2px, transparent 2px), /* Lighter Gray vertical grid lines */
+    linear-gradient(to bottom, rgba(150, 150, 150, 0.2) 2px, transparent 2px); /* Lighter Gray horizontal grid lines */
+  background-size: 40px 40px, 40px 40px, 40px 40px; /* Size for grid and gradient */
+  background-position: 0 0, 0 0, 0 0; /* Initial positions */
+  animation: moveGrid 5s linear infinite; /* Faster move (halved duration) */
+}
+
+@keyframes moveGrid {
+  0% { background-position: 0 0, 0 0, 0 0; } /* Gradient and Grids start at 0 0 */
+  100% { background-position: 0 0, 40px 40px, 40px 40px; } /* Move grids, keep gradient at 0 0 */
+}
+
+
+.wrapper {
+	position: relative;
+}
+
+article {
+  aspect-ratio: 3 / 4;
+  border-radius: calc(var(--radius) * 1px);
+  width: 260px;
+  position: relative;
+	grid-template-rows: 1fr auto;
+  box-shadow: 0 1rem 2rem -1rem black;
+  padding: 1rem;
+  display: grid;
+  border: 1px solid hsl(0 0% 100% / 0.15);
+  backdrop-filter: blur(calc(var(--cardblur, 5) * 1px));
+  /* For demo purposes. Means you get the effect on mobile */
+  touch-action: none;
+  margin-bottom: 1rem; /* Space between links in vertical list */
+  overflow: hidden; /* Clip icon and image if they go outside article bounds */
+}
+main {
+  display: flex;
+  flex-direction: column; /* Default to vertical list for mobile */
+  gap: 1rem; /* Space between articles in list */
+  align-items: center; /* Center items horizontally in list */
+  justify-content: center; /* Center items vertically if needed */
+  width: 120ch;
+  max-width: calc(100vw - 2rem);
+  position: relative;
+  padding: 2rem 0; /* Add some padding around the list on mobile */
+}
+
+/* Media query for desktop (adjust breakpoint as needed) */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row; /* Switch to row for grid layout on desktop */
+    flex-wrap: wrap; /* Allow wrapping to form a grid */
+    justify-content: center; /* Center grid items horizontally */
+    gap: 2rem; /* Space between articles in grid */
+    padding: 2rem; /* Add some padding around the grid on desktop */
+  }
+  article {
+    margin-bottom: 0; /* Remove bottom margin in grid layout */
+  }
+}
+
+
+/* Glow specific styles */
+[data-glow] {
+  --border-size: calc(var(--border, 2) * 1px);
+  --spotlight-size: calc(var(--size, 150) * 1px);
+  --hue: calc(var(--base) + (var(--xp, 0) * var(--spread, 0)));
+  background-image: radial-gradient(
+    var(--spotlight-size) var(--spotlight-size) at
+    calc(var(--x, 0) * 1px)
+    calc(var(--y, 0) * 1px),
+    hsl(var(--hue, 210) calc(var(--saturation, 100) * 1%) calc(var(--lightness, 70) * 1%) / var(--bg-spot-opacity, 0.1)), transparent
+  );
+  background-color: var(--backdrop, transparent);
+  background-size: calc(100% + (2 * var(--border-size))) calc(100% + (2 * var(--border-size)));
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  border: var(--border-size) solid var(--backup-border);
+  position: relative;
+  touch-action: none;
+}
+
+[data-glow]::before,
+[data-glow]::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: calc(var(--border-size) * -1);
+  border: var(--border-size) solid transparent;
+  border-radius: calc(var(--radius) * 1px);
+  background-attachment: fixed;
+  background-size: calc(100% + (2 * var(--border-size))) calc(100% + (2 * var(--border-size)));
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  mask:
+    linear-gradient(transparent, transparent),
+    linear-gradient(white, white);
+  mask-clip: padding-box, border-box;
+  mask-composite: intersect;
+}
+
+/* This is the emphasis light */
+[data-glow]::before {
+  background-image: radial-gradient(
+    calc(var(--spotlight-size) * 0.75) calc(var(--spotlight-size) * 0.75) at
+    calc(var(--x, 0) * 1px)
+    calc(var(--y, 0) * 1px),
+    hsl(var(--hue, 210) calc(var(--saturation, 100) * 1%) calc(var(--lightness, 50) * 1%) / var(--border-spot-opacity, 1)), transparent 100%
+  );
+  filter: brightness(2);
+}
+/* This is the spotlight */
+[data-glow]::after {
+  background-image: radial-gradient(
+    calc(var(--spotlight-size) * 0.5) calc(var(--spotlight-size) * 0.5) at
+    calc(var(--x, 0) * 1px)
+    calc(var(--y, 0) * 1px),
+    hsl(0 100% 100% / var(--border-light-opacity, 1)), transparent 100%
+  );
+}
+[data-glow] > [data-glow]:not(:is(a, button)) {
+  position: absolute;
+  inset: 0;
+  will-change: filter;
+  opacity: var(--outer, 1);
+}
+[data-glow] > [data-glow]:not(:is(a, button)) {
+  border-radius: calc(var(--radius) * 1px);
+  border-width: calc(var(--border-size) * 20);
+  filter: blur(calc(var(--border-size) * 10));
+  background: none;
+  pointer-events: none;
+}
+[data-glow] > [data-glow]:not(:is(a, button))::before {
+  inset: -10px;
+  border-width: 10px;
+}
+[data-glow] > [data-glow] {
+  border: none;
+}
+[data-glow] :is(a, button) {
+  border-radius: calc(var(--radius) * 1px);
+  border: var(--border-size) solid transparent;
+  text-decoration: none; /* Remove default link underline */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 2rem;
+  align-self: end;
+  color: hsl(0 0% 80%);
+  width: 100%; /* Make link full width of article */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+[data-glow] :is(a, button) [data-glow] {
+  background: none;
+}
+[data-glow] :is(a, button) [data-glow]::before {
+  inset: calc(var(--border-size) * -1);
+  border-width: calc(var(--border-size) * 1);
+}
+
+a[data-glow] span { /* Style for text in links */
+  font-weight: bold;
+  background-image: radial-gradient(
+    var(--spotlight-size) var(--spotlight-size) at
+    calc(var(--x, 0) * 1px)
+    calc(var(--y, 0) * 1px),
+    hsl(var(--hue, 210) calc(var(--saturation, 100) * 1%) calc(var(--lightness, 70) * 1%) / var(--bg-spot-opacity, 1)), transparent
+  );
+  background-color: var(--backdrop, transparent);
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-clip: text;
+  filter: brightness(1.5);
+  color: transparent;
+}
+
+.icon-container {
+  position: absolute;
+  top: 1.7rem; /* Adjust as needed */
+  left: 0.7rem; /* Adjust as needed */
+  /* or center icon at top: */
+  /* top: 1rem; left: 50%; transform: translateX(-50%); */
+}
+
+.icon-container svg { /* Style for icons in icon-container */
+  width: 32px; /* Adjust icon size as needed */
+  height: 32px;
+  fill: hsl(0 0% 80%); /* Icon color */
+  display: block; /* Ensure icon takes up space */
+}
+
+/* Remove margin from icon in link, as it's moved out */
+a[data-glow] svg {
+  margin-right: 0; /* Remove margin from icon within link */
+  display: none; /* Hide if you accidentally have icon in link too */
+}
+
+.image-container {
+  position: absolute;
+  inset: 0;
+  z-index: 0; /* Place image behind other content */
+  overflow: hidden; /* Clip image to article bounds */
+  border-radius: inherit; /* Inherit border-radius from article */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure image covers the container */
+  opacity: 0.4; /* Adjust transparency as needed */
+  filter: blur(3px); /* Adjust blur amount as needed */
+}
+
+.fa-lg {
+  font-size: 2.25em !important;
+}
+
+.nsfw-icon {
+  margin-left: 0.5em; /* Space from social icon */
+  color: lightcoral; /* Or any color you prefer for the icon */
+  vertical-align: middle; /* Align icon with text vertically */
+  cursor: help; /* Indicate it's interactive */
+  position: relative; /* Needed for potential adjustments within icon-container */
+  top: -0.1em; /* Slightly adjust vertical position if needed */
+}
+
+.tooltip {
+  position: fixed; /* or absolute depending on your layout */
+  background-color: rgba(0, 0, 0, 0.8); /* Dark background for tooltip */
+  color: white;
+  padding: 0.5em 0.75em;
+  border-radius: 4px;
+  font-size: 0.8em;
+  z-index: 10; /* Ensure tooltip is on top */
+  pointer-events: none; /* Tooltip should not block interactions */
+}
