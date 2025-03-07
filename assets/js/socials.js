@@ -98,7 +98,7 @@ const App = () => {
     link.icon,
     link.nsfw && /*#__PURE__*/
     React.createElement("i", {
-      className: "fas fa-exclamation-triangle fa-sm nsfw-icon",
+      className: "fas fa-exclamation-triangle fa-shake nsfw-icon",
       onMouseEnter: e => handleTooltipMouseEnter("NSFW", e),
       onMouseLeave: handleTooltipMouseLeave })), /*#__PURE__*/
 
