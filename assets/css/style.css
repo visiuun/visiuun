@@ -60,6 +60,8 @@ nav {
 body {
   background: #000;
   overflow-x: hidden;
+  height: 100vh !important;
+  width: 100vw !important;
 }
 
 /* Cool infinite background scrolling animation.
