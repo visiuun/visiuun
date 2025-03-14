@@ -29,6 +29,15 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  box-sizing: border-box; /* ADD THIS LINE */
+  margin: 0; /* ADD THIS LINE */
+  padding: 0; /* ADD THIS LINE */
+}
+
+html, body { /* ADD THIS SECTION */
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 nav {
@@ -36,6 +45,7 @@ nav {
   height: 84px;
   z-index: 2022;
   transition: background-color 0.3s ease;
+  width: 100%; /* ADD THIS LINE */
 }
 
 
@@ -59,7 +69,6 @@ nav {
 
 body {
   background: #000;
-  overflow-x: hidden;
   height: 100vh !important;
   width: 100vw !important;
 }
@@ -151,6 +160,8 @@ body {
   flex-direction: row;
   justify-content: center;
   text-align: center;
+  max-width: 100%; /* ADD THIS LINE */
+  overflow: hidden; /* ADD THIS LINE */
 }
 
 
@@ -281,6 +292,8 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   min-height: max-content;
+  max-width: 100%; /* ADD THIS LINE */
+  overflow-x: hidden; /* ADD THIS LINE */
 }
 
 .about-content {
@@ -323,6 +336,8 @@ body {
   background: #000;
   border-top: 1px solid #333;
   border-bottom: 1px solid #333;
+  max-width: 100%; /* ADD THIS LINE */
+  overflow-x: hidden; /* ADD THIS LINE */
 }
 
 .statistics {
@@ -397,6 +412,8 @@ body {
   padding-left: 24px;
   padding-right: 24px;
   min-height: max-content;
+  max-width: 100%; /* ADD THIS LINE */
+  overflow-x: hidden; /* ADD THIS LINE */
 }
 
 .project-content {
@@ -421,6 +438,7 @@ body {
   transform: translateX(12%);
   aspect-ratio: 1895 / 1038;
   object-fit: cover;
+  max-width: 100%; /* ADD THIS LINE */
 }
 
 .left .project-image {
@@ -428,11 +446,14 @@ body {
   transform: translateX(-12%);
   aspect-ratio: 1895 / 1038;
   object-fit: cover;
+  max-width: 100%; /* ADD THIS LINE */
 }
 
 
 .image-container {
   grid-column: 2 !important;
+  max-width: 100%; /* ADD THIS LINE */
+  overflow-x: hidden; /* ADD THIS LINE */
 }
 
 
@@ -463,6 +484,7 @@ body {
 .card img {
   width: 100%;
   border-radius: 15px;
+  max-width: 100%; /* ADD THIS LINE */
 }
 
 .card-heading {
@@ -567,7 +589,7 @@ body {
 
 @media only screen and (max-width: 900px) {
   .content h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .content {
@@ -658,6 +680,8 @@ footer {
   padding: 30px;
   color: #fff;
   border-top: 1px solid #333;
+  max-width: 100%; /* ADD THIS LINE */
+  overflow-x: hidden; /* ADD THIS LINE */
 }
 
 .footer-content {
