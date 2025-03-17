@@ -1,7 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() { // **SECTION: DOMContentLoaded Event Listener** - Ensures all code inside runs after the HTML document is fully loaded and parsed.
 
+  // **SECTION: AOS (Animate On Scroll) Initialization** - Initializes the AOS library to enable animations triggered by scrolling.
   AOS.init();
 
+  // **SECTION: ScrollReveal Initialization and Configuration** - Sets up ScrollReveal to create reveal animations for elements as they come into the viewport.
   const sr = ScrollReveal({
     origin: 'bottom',
     distance: '60px',
@@ -11,19 +13,20 @@ document.addEventListener('DOMContentLoaded', function() {
 
   const ops = { interval: 100 };
 
+  // **SECTION: ScrollReveal Element Reveals - Hero and General Content** - Defines which elements will have reveal animations and their general animation settings.
   sr.reveal('.head, .paragraph, .hero-button', ops);
   sr.reveal('.icon', ops);
   sr.reveal(".about-title, .about-img, .about-text, .about-description.grey", ops);
   sr.reveal('.stats-item', ops);
   sr.reveal('.card', { interval: 100, delay: 50 });
-  // Project Right
+  // **SECTION: ScrollReveal Element Reveals - Project Section (Right)** - Defines reveal animations specifically for project elements on the right side, using different origins and durations.
   sr.reveal(".right .project-image", { interval: 100, origin: 'left', distance: '60px', duration: 2000 });
   sr.reveal('.right .project-content', { interval: 100, origin: 'right', distance: '60px', duration: 2000 });
-  // Project Left
+  // **SECTION: ScrollReveal Element Reveals - Project Section (Left)** - Defines reveal animations specifically for project elements on the left side, using different origins and durations.
   sr.reveal(".left .project-image", { interval: 100, origin: 'right', distance: '180px', duration: 2000 });
   sr.reveal('.left .project-content', { interval: 100, origin: 'left', distance: '180px', duration: 2000 });
 
-  // Blob
+  // **SECTION: Three.js Blob Animation Setup** - Initializes Three.js renderer, scene, camera, geometry, and material for the 3D blob animation.
   const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('canvas'), antialias: true });
   renderer.setPixelRatio(window.devicePixelRatio);
   renderer.setSize(452, 250);
@@ -34,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
   const material = new THREE.MeshNormalMaterial();
   let sphere = new THREE.Mesh(sphere_geometry, material);
   scene.add(sphere);
+
+  // **SECTION: Three.js Blob Animation Update Function** - Defines the function that modifies the blob's vertices based on noise and time, creating the animated effect.
   const update = function () {
     const time = performance.now() * 0.003;
     const k = 3;
@@ -45,6 +50,8 @@ document.addEventListener('DOMContentLoaded', function() {
     sphere.geometry.normalsNeedUpdate = true;
     sphere.geometry.verticesNeedUpdate = true;
   }
+
+  // **SECTION: Three.js Animation Loop** - Sets up the animation loop to continuously update and render the 3D scene for the blob animation.
   function animate() {
     update();
     renderer.render(scene, camera);
@@ -52,8 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
   requestAnimationFrame(animate);
 
-  // Nav
-
+  // **SECTION: Navigation Links Smooth Scrolling** - Adds smooth scrolling behavior to navigation links that have the `data-scroll` attribute.
   const links = document.querySelectorAll(".nav-link");
   Array.from(links).forEach(link => {
     if (link.getAttribute('data-scroll')) {
@@ -61,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   })
 
+  // **SECTION: Mobile Class Toggle Function** - Defines the function `add()` to add or remove the 'mobile' class on the body based on window width.
   function add() {
     if (window.innerWidth < 900) {
       document.body.classList.add('mobile')
@@ -68,10 +75,10 @@ document.addEventListener('DOMContentLoaded', function() {
       document.body.classList.remove('mobile')
     }
   }
-  add(); // Call add() immediately after defining it, inside DOMContentLoaded
-  window.addEventListener('resize', add);
+  add(); // **SECTION: Initial Mobile Class Check** - Calls the `add()` function immediately to set the 'mobile' class on initial page load if necessary.
+  window.addEventListener('resize', add); // **SECTION: Mobile Class Update on Resize** - Adds an event listener to update the 'mobile' class whenever the window is resized.
 
-
+  // **SECTION: Tippy.js Tooltip Initialization** - Initializes Tippy.js tooltips for specified elements using the `tips` array.
   const tips = [
     {
       query: '#discord',
@@ -91,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function() {
     tippy(query, { content })
   }
 
-
+  // **SECTION: Hamburger Menu Logic** - Handles the functionality of the hamburger menu for mobile navigation, toggling the 'open' class and animating the hamburger icon.
   let hamburger = document.querySelector('.hamburger')
   let mobileNav = document.querySelector('.nav-list')
   let bars = document.querySelectorAll('.hamburger span')
@@ -110,15 +117,16 @@ document.addEventListener('DOMContentLoaded', function() {
       isActive = false
     }
   })
-}); // End of DOMContentLoaded listener
+}); // **SECTION: End of DOMContentLoaded Event Listener**
 
-
-window.addEventListener('scroll', e => { // This can stay outside DOMContentLoaded as scroll event is independent
+// **SECTION: Scroll Event Listener for Navigation Bar Style** - Listens for scroll events to change the navigation bar's background and backdrop filter when scrolling down, and reset styles when at the top.
+window.addEventListener('scroll', e => {
   if (document.documentElement.scrollTop > 20) {
     const nav = document.getElementById('nav')
     nav.style.backgroundColor = 'rgba(0,0,0,0.5)'
     nav.style.backdropFilter = 'blur(5px)'
   } else {
+    const nav = document.getElementById('nav') // Added to ensure nav is defined in else block too
     nav.style.boxShadow = 'inset 0 -1px 0 0 hsla(0,0%,100%,0.1)'
     nav.style.backgroundColor = 'transparent'
   }
