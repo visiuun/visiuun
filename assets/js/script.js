@@ -1,5 +1,6 @@
 AOS.init();
 
+
 window.addEventListener('scroll', e => {
 	if (document.documentElement.scrollTop > 20) {
 		const nav = document.getElementById('nav')
@@ -89,7 +90,7 @@ Array.from(links).forEach(link => {
 		link.onclick = () => window.scrollTo({ top: document.querySelector(link.getAttribute("data-scroll")).offsetTop, behavior: 'smooth' })
 	}
 })
-
+window.addEventListener('resize', add)
 function add() {
 	if (window.innerWidth < 900) {
 		document.body.classList.add('mobile')
@@ -97,11 +98,6 @@ function add() {
 		document.body.classList.remove('mobile')
 	}
 }
-
-document.addEventListener('DOMContentLoaded', add); // Call add when DOM is ready
-window.addEventListener('resize', add);
-
-
 let hamburger = document.querySelector('.hamburger')
 let mobileNav = document.querySelector('.nav-list')
 let bars = document.querySelectorAll('.hamburger span')
@@ -120,3 +116,5 @@ hamburger.addEventListener('click', function () {
 		isActive = false
 	}
 })
+
+window.onload = add;
