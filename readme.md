@@ -31,7 +31,7 @@
 <br/>
 
 <p align="center" style="font-size: 16px; color: #333;">
-  Greetings from the land of pizza and questionable internet speeds, aka <strong style="color: #F48FB1;">Italy!</strong> 🇮🇹  Fueled by copious amounts of <strong style="color: #F48FB1;">caffeine</strong> ☕ and a daily dose of digital rabbit holes (・∀・), I'm Vis!  I build things. Mostly code-shaped things.  Specifically, scripts to wrestle the boring tasks into submission. ✨ Because life's too short to manually rename 500 files, right? (눈_눈)
+  Greetings from the land of pizza and questionable internet speeds, aka <strong style="color: #F48FB1;">Italy!</strong> 🇮🇹  Fueled by copious amounts of <strong style="color: #F48FB1;">monster</strong> ☕ and a daily dose of digital rabbit holes (・∀・), I'm Vis!  I build things. Mostly code-shaped things.  Specifically, scripts to wrestle the boring tasks into submission. ✨ Because life's too short to manually rename 500 files, right? (눈_눈)
 </p>
 
 <p align="center" style="font-size: 16px; color: #333;">
@@ -53,7 +53,7 @@
 </div>
 <br/>
 
-<h3 align="center" style="color: #F48FB1; font-size: 2em; text-shadow: 2px 2px 3px #FFE4E1;">💖 <font color="#FFB6C1">✨</font> Featured Projects:  <font color="#FFB6C1">Automating the Mundane Mayhem!</font> <font color="#FFB6C1">✨</font> 💖</h3>
+<h3 align="center" style="color: #F48FB1; font-size: 2em; text-shadow: 2px 2px 3px #FFE4E1;">💖 <font color="#FFB6C1">✨</font> Featured Projects:  <font color="#FFB6C1">Automating the boring stuff!</font> <font color="#FFB6C1">✨</font> 💖</h3>
 
 <div align="center">
   <table style="width: 80%; border-collapse: collapse; margin-top: 20px;">
@@ -102,7 +102,7 @@
           <li>🌸 <a href="https://github.com/visiuun/pic.re-downloader" style="color: #F48FB1; text-decoration: none; font-weight: bold;">Pic.re-downloader</a></li>
           <li style="margin-top: 5px; font-size: 14px; color: #555;">Downloads pics from pic.re.  Self-explanatory, right?  Moving on!  💨</li>
           <li>🌸 <a href="https://github.com/visiuun/Video-fryer" style="color: #F48FB1; text-decoration: none; font-weight: bold;">Video-fryer</a> 🔥</li>
-          <li style="margin-top: 5px; font-size: 14px; color: #555;">Deep-fries your videos.  Because sometimes, you just need digital chaos. (Python)</li>
+          <li style="margin-top: 5px; font-size: 14px; color: #555;">Deep-fries your videos.  Because sometimes, quality just isn't fun. (Python)</li>
           <li>🌸 <a href="https://github.com/visiuun/Bulk-folder-extractor" style="color: #F48FB1; text-decoration: none; font-weight: bold;">Bulk-folder-extractor</a></li>
           <li style="margin-top: 5px; font-size: 14px; color: #555;">Extracts folders in bulk. Efficiency is my middle name... almost.</li>
           <li>🌸 <a href="https://github.com/visiuun/Bulk-archive-compressor" style="color: #F48FB1; text-decoration: none; font-weight: bold;">Bulk-archive-compressor</a></li>
@@ -112,7 +112,7 @@
       <td style="padding: 15px; border-right: 2px dotted #F9A8D4; border-bottom: 2px dotted #F9A8D4; border-top: 2px dotted #F9A8D4; border-radius: 10px; background-color: #FFE4E1; vertical-align: top; width: 50%;">
         <ul style="list-style-type: none; padding-left: 0;">
           <li>🌸 <a href="https://github.com/visiuun/Image-fryer" style="color: #F48FB1; text-decoration: none; font-weight: bold;">Image-fryer</a> (≧∇≦)/</li>
-          <li style="margin-top: 5px; font-size: 14px; color: #555;">Deep-fries images. For… artistic expression?  Mostly for giggles.</li>
+          <li style="margin-top: 5px; font-size: 14px; color: #555;">Deep-fries images. For… artistic expression?  Mostly for the silly</li>
           <li>🌸 <a href="https://github.com/visiuun/PyR34-Downloader" style="color: #F48FB1; text-decoration: none; font-weight: bold;">PyR34-Downloader</a> 📚</li>
           <li style="margin-top: 5px; font-size: 14px; color: #555;">...  Still for archival purposes!  My digital library is getting HUGE. (Python)</li>
           <li>🌸 <a href="https://github.com/visiuun/Duplicate-files-deleter" style="color: #F48FB1; text-decoration: none; font-weight: bold;">Duplicate-files-deleter</a> 🧹</li>
@@ -133,7 +133,7 @@
 </div>
 <br/>
 
-<h3 align="center" style="color: #F48FB1; font-size: 2em; text-shadow: 2px 2px 3px #FFE4E1;">💖 <font color="#FFB6C1">Tools of the Trade & Digital Love Languages</font> 💖</h3>
+<h3 align="center" style="color: #F48FB1; font-size: 2em; text-shadow: 2px 2px 3px #FFE4E1;">💖 <font color="#FFB6C1">Languages I kno</font> 💖</h3>
 
 <p align="center">
   <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
@@ -175,9 +175,9 @@
     <tr>
       <td style="padding: 15px; border: 2px dashed #F48FB1; border-radius: 10px; background-color: #FFE4E1; vertical-align: top;">
         <ul style="list-style-type: none; padding-left: 0;">
-          <li>✨ <strong style="color: #F9A8D4;">Reverse Engineering</strong> (unraveling the digital mysteries!) ( ⚯_⚯) <br/> <small style="color: #F48FB1;">*...one disassembled byte at a time...*</small></li>
+          <li>✨ <strong style="color: #F9A8D4;">Reverse Engineering</strong> ( ⚯_⚯) <br/> <small style="color: #F48FB1;">*...one disassembled neuron at a time...*</small></li>
           <li>✨ <strong style="color: #F9A8D4;">Cryptography</strong> (speaking in secret code!) (⌒∇⌒) <br/> <small style="color: #F48FB1;">*...mostly failing to break my own ciphers...*</small></li>
-          <li>✨ <strong style="color: #F9A8D4;">Automation</strong> (building robot minions!) 🤖 <br/> <small style="color: #F48FB1;">*...still waiting for them to do the dishes...*</small></li>
+          <li>✨ <strong style="color: #F9A8D4;">Automation</strong> (building robot catgirls!) 🤖 <br/> <small style="color: #F48FB1;">*...still waiting for them to do the dishes...*</small></li>
           <li>✨ <strong style="color: #F9A8D4;">Cute femboys</strong> (💖 ... just putting it out there again!) (*/ω＼*) <br/> <small style="color: #F48FB1;">*...because why not?  ✨*</small></li>
         </ul>
       </td>
@@ -192,7 +192,7 @@
 </div>
 <br/>
 
-<h3 align="center" style="color: #F48FB1; font-size: 2em; text-shadow: 2px 2px 3px #FFE4E1;">🌸 <font color="#FFB6C1">GitHub Garden Activity - Watch the Magic Happen!</font> 🌸</h3>
+<h3 align="center" style="color: #F48FB1; font-size: 2em; text-shadow: 2px 2px 3px #FFE4E1;">🌸 <font color="#FFB6C1">GitHub Garden Activity</font> 🌸</h3>
 
 <!--START_SECTION:github_activity-->
 <!--END_SECTION:github_activity-->
@@ -204,5 +204,5 @@
 <br/>
 
 <p align="center" style="font-size: 14px; color: #F48FB1; font-style: italic; text-shadow: 1px 1px 1px #FFE4E1;">
-  <em><strong>WARNING:</strong> May contain traces of caffeine, questionable code, and excessive emojis. Use my code responsibly! I'm not liable for sentient deep-fried memes or robots staging a coup. ( >ω<)</em>
+  <em><strong>WARNING:</strong> May contain traces of caffeine, questionable code, and excessive emojis. Use my code responsibly! I'm not liable for sily errors. ( >ω<)</em>
 </p>
