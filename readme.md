@@ -1,47 +1,117 @@
-### Hi there 👋 I'm Vis!
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="100%">
+  <h1><font color="#FFB6C1">✨ Hi there, I'm Vis! ✨</font></h1>
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="100%">
+</div>
 
-[![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun)](https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun)
+<div align="center">
+  <a href="https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun" alt="Visitor Badge">
+  </a>
+</div>
 
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=visiuun)
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=visiuun&theme=pastel-pink&hide_border=true" alt="GitHub Streak">
+</div>
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=visiuun&show_icons=true&count_private=true&theme=dark)
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=visiuun&show_icons=true&count_private=true&theme=pastel-pink&hide_border=true" alt="GitHub Stats">
+</div>
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=visiuun&layout=compact&theme=dark)
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=visiuun&layout=compact&theme=pastel-pink&hide_border=true" alt="Top Langs">
+</div>
 
-Based in Italy 🇮🇹 and fueled by caffeine and questionable internet content.  I like making things, especially if they automate tedious tasks.
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="100%">
+</div>
 
-**Currently:** Procrastinating on world domination, one Python script at a time.
+<p align="center">
+  Based in <font color="#FFB6C1"><b>Italy</b></font> 🇮🇹, fueled by <font color="#FFB6C1"><b>caffeine</b></font> and the <font color="#FFB6C1"><b>digital ether</b></font>. <br>
+  I craft code, especially when it involves <font color="#FFB6C1"><b>automating the mundane</b></font> into oblivion.
+</p>
 
-**Email:** [visiuun@visiuun.com](mailto:visiuun@visiuun.com)
-**Website:** [visiuun.com](https://visiuun.com)
-**Instagram:** [Instagram.com/visiuun](https://Instagram.com/visiuun)
+<p align="center">
+  <b>Currently:</b> <font color="#FFB6C1"><b>Plotting world domination</b></font> (still in beta), one Python script at a time. 😈
+</p>
 
----
+<div align="center">
+  <a href="mailto:visiuun@visiuun.com"><font color="#FFB6C1"><b>Email:</b></font> <font color="#D87093">visiuun@visiuun.com</font></a> <br>
+  <a href="https://visiuun.com"><font color="#FFB6C1"><b>Website:</b></font> <font color="#D87093">visiuun.com</font></a> <br>
+  <a href="https://Instagram.com/visiuun"><font color="#FFB6C1"><b>Instagram:</b></font> <font color="#D87093">Instagram.com/visiuun</font></a>
+</div>
 
-### Featured Projects: Because Someone Has to Automate *This* Stuff
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="100%">
+</div>
 
-*   **[visiuun](https://github.com/visiuun/visiuun)**: My personal portfolio site.  Don't judge the HTML, I swear I know more than just `<marquee>`.
-*   **[Kemono.su-Downloader](https://github.com/visiuun/Kemono.su-Downloader)**: You know... for archiving purposes.  It's a *research tool*.
-*   **[VIS-Cypher-Advanced](https://github.com/visiuun/VIS-Cypher-Advanced)**:  My attempt at making a secure cipher.  Don't use it for anything *actually* important, okay? It's a learning exercise.
+<div align="center">
+  <h2><font color="#FFB6C1">🌟 Featured Projects: Automating the Absurd 🌟</font></h2>
+</div>
 
-### Other Notable Repos:
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="75%">
+</div>
 
-*   **[PC-info-gatherer](https://github.com/visiuun/pc-info-gatherer)**: Gathers PC info.
-*   **[Pic.re-downloader](https://github.com/visiuun/pic.re-downloader)**: downloads pics from pic.re
-*   **[Video-fryer](https://github.com/visiuun/Video-fryer)**: Because sometimes you just need to turn a video into digital garbage. (Python)
-*   **[Bulk-folder-extractor](https://github.com/visiuun/Bulk-folder-extractor)**: Extracts folders in bulk.
-*   **[Bulk-archive-compressor](https://github.com/visiuun/Bulk-archive-compressor)**: Compresses archives in bulk.
-*   **[Image-fryer](https://github.com/visiuun/Image-fryer)**: Make funny deep fried images
-*   **[PyR34-Downloader](https://github.com/visiuun/PyR34-Downloader)**: Look, sometimes you just need to bulk download rule34. It's for... archival reasons. (Python)
-*   **[Duplicate-files-deleter](https://github.com/visiuun/Duplicate-files-deleter)**: Finds and deletes duplicate files.
-*   **[Archive-Extraction-Tool](https://github.com/visiuun/Archive-Extraction-Tool)**: Extracts archives in bulk.
-*   **[Coomer.su-Downloader](https://github.com/visiuun/Coomer.su-Downloader)**: Similar to kemono-downloader but for coomer
+<ul>
+  <li>
+    <p align="center">
+      <a href="https://github.com/visiuun/visiuun"><font color="#D87093"><b>visiuun</b></font></a>: My digital playground. <br>
+      Don't judge the <font color="#FFB6C1"><b>HTML</b></font>, it's ironically retro. 😉  (Definitely knows more than just <code><marquee></code>... mostly.)
+    </p>
+  </li>
+  <li>
+    <p align="center">
+      <a href="https://github.com/visiuun/Kemono.su-Downloader"><font color="#D87093"><b>Kemono.su-Downloader</b></font></a>:  For... <font color="#FFB6C1"><b>academic research</b></font> purposes.  <br>
+      Yeah, that's the ticket.  Purely educational. 📚
+    </p>
+  </li>
+  <li>
+    <p align="center">
+      <a href="https://github.com/visiuun/VIS-Cypher-Advanced"><font color="#D87093"><b>VIS-Cypher-Advanced</b></font></a>:  My attempt at making a <font color="#FFB6C1"><b>super secure cipher</b></font>. <br>
+      (Spoiler: probably not.  But learning is the real encryption key! 🔑)
+    </p>
+  </li>
+</ul>
 
----
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="75%">
+</div>
 
-### Languages and Tools:
+<div align="center">
+  <h3><font color="#FFB6C1">🛠️ Other Notable Repos: The Automation Army 🛠️</font></h3>
+</div>
 
-<p align="left">
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="50%">
+</div>
+
+<ul>
+  <li><p align="center"><a href="https://github.com/visiuun/pc-info-gatherer"><font color="#D87093"><b>PC-info-gatherer</b></font></a>: Gathers PC info.  (Surprise!)</p></li>
+  <li><p align="center"><a href="https://github.com/visiuun/pic.re-downloader"><font color="#D87093"><b>Pic.re-downloader</b></font></a>: Downloads pics from pic.re. (Obvious, right?)</p></li>
+  <li><p align="center"><a href="https://github.com/visiuun/Video-fryer"><font color="#D87093"><b>Video-fryer</b></font></a>: Turns videos into <font color="#FFB6C1"><b>digital abstract art</b></font>. (Python)</p></li>
+  <li><p align="center"><a href="https://github.com/visiuun/Bulk-folder-extractor"><font color="#D87093"><b>Bulk-folder-extractor</b></font></a>: Extracts folders. In bulk. (Mind. Blown.)</p></li>
+  <li><p align="center"><a href="https://github.com/visiuun/Bulk-archive-compressor"><font color="#D87093"><b>Bulk-archive-compressor</b></font></a>: Compresses archives.  You guessed it... bulk!</p></li>
+  <li><p align="center"><a href="https://github.com/visiuun/Image-fryer"><font color="#D87093"><b>Image-fryer</b></font></a>: For when images need to be <font color="#FFB6C1"><b>deep-fried and meme-ready</b></font>.</p></li>
+  <li><p align="center"><a href="https://github.com/visiuun/PyR34-Downloader"><font color="#D87093"><b>PyR34-Downloader</b></font></a>:  <font color="#FFB6C1"><b>Archival</b></font> of... certain digital assets. (Python)</p></li>
+  <li><p align="center"><a href="https://github.com/visiuun/Duplicate-files-deleter"><font color="#D87093"><b>Duplicate-files-deleter</b></font></a>:  Deletes duplicate files.  (Efficiency is key!)</p></li>
+  <li><p align="center"><a href="https://github.com/visiuun/Archive-Extraction-Tool"><font color="#D87093"><b>Archive-Extraction-Tool</b></font></a>: Extracts archives.  Tool-style.</p></li>
+  <li><p align="center"><a href="https://github.com/visiuun/Coomer.su-Downloader"><font color="#D87093"><b>Coomer.su-Downloader</b></font></a>:  See Kemono.su-Downloader, but for... a different kind of <font color="#FFB6C1"><b>research</b></font>.</p></li>
+</ul>
+
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="50%">
+</div>
+
+<div align="center">
+  <h3><font color="#FFB6C1">💻 Languages and Tools: My Digital Arsenal 💻</font></h3>
+</div>
+
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="25%">
+</div>
+
+<p align="left" align="center">
   <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
   </a>
@@ -68,27 +138,40 @@ Based in Italy 🇮🇹 and fueled by caffeine and questionable internet content
   </a>
 </p>
 
----
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="25%">
+</div>
 
-### Things I'm interested in:
+<div align="center">
+  <h3><font color="#FFB6C1">💖 Things I'm Hyped About: 💖</font></h3>
+</div>
 
-*   Reverse Engineering (slowly learning)
-*   Cryptography (also slowly learning)
-*   Automation
-*   Cute femboys
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="10%">
+</div>
 
-### GitHub Activity:
+<p align="center">
+  <font color="#FFB6C1"><b>Reverse Engineering</b></font> (deciphering the matrix, slowly...) <br>
+  <font color="#FFB6C1"><b>Cryptography</b></font> (because secrets are cool) <br>
+  <font color="#FFB6C1"><b>Automation</b></font> (making robots do my bidding) <br>
+  <font color="#FFB6C1"><b>Cute femboys</b></font> (they're just... nice, okay?)
+</p>
+
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="10%">
+</div>
+
+<div align="center">
+  <h3><font color="#FFB6C1">🔥 GitHub Activity: 🔥</font></h3>
+</div>
 
 <!--START_SECTION:github_activity-->
 <!--END_SECTION:github_activity-->
 
-<!-- I'll uncomment this when I get around to setting it up! -->
-<!--
- <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
-  <img title="🔥Streak stats" alt="Mark streak" src="http://github-readme-streak-stats.herokuapp.com/?user=DenverCoder1&theme=dark&background=000000" />
- </a>
--->
+<div align="center">
+  <img src="https://i.imgur.com/your-vaporwave-pastel-pink-divider-image.png" width="25%">
+</div>
 
----
-
-_Disclaimer: I am not responsible for what you do with my code. Use at your own risk (and ethical discretion)._
+<div align="center">
+  <font size="2" color="#D87093"><i>Disclaimer: I am not responsible for what you do with my code. Use at your own risk (and ethical discretion).</i></font>
+</div>
