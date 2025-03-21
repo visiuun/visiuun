@@ -1,92 +1,76 @@
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=100&color=F9A8D4&vCenter=true&width=435&lines=✨+Hi+there+👋+I'm+Vis!+💖" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&pause=100&color=F9A8D4&vCenter=true&width=435&lines=🌸+Hi+there+👋+I'm+Vis!+💖" alt="Typing SVG" />
 </div>
 
-<div align="center">
+<p align="center">
   <a href="https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun">
     <img src="https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun" alt="Visitor Badge" style="border-radius: 10px; border: 2px solid #F9A8D4;">
   </a>
-</div>
+</p>
 
-<div align="center">
+<p align="center">
   <a href="https://github.com/visiuun">
     <img src="https://github-readme-streak-stats.herokuapp.com/?user=visiuun&theme=pastel-pink" alt="GitHub Streak" style="border-radius: 10px; border: 2px solid #F9A8D4;">
   </a>
-</div>
+</p>
 
-<div align="center">
+<p align="center">
   <a href="https://github.com/visiuun">
     <img src="https://github-readme-stats.vercel.app/api?username=visiuun&show_icons=true&count_private=true&theme=pastel-pink" alt="GitHub Stats" style="border-radius: 10px; border: 2px solid #F9A8D4;">
   </a>
-</div>
+</p>
 
-<div align="center">
+<p align="center">
   <a href="https://github.com/visiuun">
     <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=visiuun&layout=compact&theme=pastel-pink" alt="Top Langs" style="border-radius: 10px; border: 2px solid #F9A8D4;">
   </a>
-</div>
+</p>
 
 <br/>
 
 <p align="center">
-  Based in sunny Italy 🇮🇹, fueled by copious amounts of caffeine ☕ and an endless stream of... interesting internet finds 😜. I'm a maker of things, especially the kind that banish boring, repetitive tasks to the digital abyss! ✨
+  Based in lovely Italy 🇮🇹, energized by caffeine ☕ and a healthy dose of internet adventures (´｡• ω •｡`). I love making things, especially scripts to automate the boring stuff! ✨
 </p>
 
 <p align="center">
-  **Currently:**  Pretending to work on world domination 👑, but mostly writing Python scripts and getting distracted by cat videos 🐈.
+  **Currently:**  Supposedly working on world domination (￣ω￣), but mostly coding in Python and watching cat videos (=^･ω･^=).
 </p>
 
 <p align="center">
   **Let's Connect!** 🌸
 </p>
 <p align="center">
-  **Email:** <a href="mailto:visiuun@visiuun.com" style="color: #F48FB1; text-decoration: none;">visiuun@visiuun.com</a> |
-  **Website:** <a href="https://visiuun.com" style="color: #F48FB1; text-decoration: none;">visiuun.com</a> |
-  **Instagram:** <a href="https://Instagram.com/visiuun" style="color: #F48FB1; text-decoration: none;">Instagram.com/visiuun</a>
+  <a href="mailto:visiuun@visiuun.com" style="color: #F48FB1; text-decoration: none;">Email</a> •
+  <a href="https://visiuun.com" style="color: #F48FB1; text-decoration: none;">Website</a> •
+  <a href="https://Instagram.com/visiuun" style="color: #F48FB1; text-decoration: none;">Instagram</a>
 </p>
 
 <hr style="border-top: 2px dashed #F9A8D4; border-bottom: none; border-left: none; border-right: none; margin-top: 20px; margin-bottom: 20px;">
 
-<div align="center">
-  <h3 style="color: #F48FB1;">💖 Featured Projects: Automating the Mundane (So You Don't Have To!) 💖</h3>
-</div>
+<h3 align="center" style="color: #F48FB1;">💖 Featured Projects: Automating the Mundane (So You Don't Have To!) 💖</h3>
 
-<ul>
-  <li>
-    🌸 **<a href="https://github.com/visiuun/visiuun" style="color: #F48FB1; text-decoration: none;">visiuun</a>**: My personal digital playground!  Don't judge the HTML... it's got *character* 😉.  (Okay, maybe I've learned a bit more than just <code><marquee></code> since then!)
-  </li>
-  <li>
-    🌸 **<a href="https://github.com/visiuun/Kemono.su-Downloader" style="color: #F48FB1; text-decoration: none;">Kemono.su-Downloader</a>**:  For... *research* purposes, obviously! 🧐  Think of it as digital archiving.  Yes, *archiving*!
-  </li>
-  <li>
-    🌸 **<a href="https://github.com/visiuun/VIS-Cypher-Advanced" style="color: #F48FB1; text-decoration: none;">VIS-Cypher-Advanced</a>**: My brave (and possibly slightly naive) attempt at cryptography! 🔐  Please don't entrust your top-secret world domination plans to this just yet.  It's still learning!
-  </li>
-</ul>
+*   🌸 **[visiuun](https://github.com/visiuun/visiuun)**: My personal website!  Don't judge the HTML too harshly, okay? (o´ω`o)ﾉ  I promise I know more than just <code><marquee></code> now!
+*   🌸 **[Kemono.su-Downloader](https://github.com/visiuun/Kemono.su-Downloader)**: For... *research* purposes, of course! (¬‿¬ )  Think of it as digital archiving.  Yes, *archiving*!
+*   🌸 **[VIS-Cypher-Advanced](https://github.com/visiuun/VIS-Cypher-Advanced)**: My attempt at making a cipher! 🔐  Please don't use it for top-secret stuff yet, it's still learning! (⌒_⌒;)
 
 <hr style="border-top: 2px dashed #F9A8D4; border-bottom: none; border-left: none; border-right: none; margin-top: 20px; margin-bottom: 20px;">
 
-<div align="center">
-  <h3 style="color: #F48FB1;">✨ Other Projects in My Digital Garden ✨</h3>
-</div>
+<h3 align="center" style="color: #F48FB1;">✨ Other Projects in My Digital Garden ✨</h3>
 
-<ul>
-  <li>🌸 **<a href="https://github.com/visiuun/pc-info-gatherer" style="color: #F48FB1; text-decoration: none;">PC-info-gatherer</a>**:  Gathers PC info.  (It's in the name! 😜)</li>
-  <li>🌸 **<a href="https://github.com/visiuun/pic.re-downloader" style="color: #F48FB1; text-decoration: none;">Pic.re-downloader</a>**: Downloads pics from pic.re.  Surprise!</li>
-  <li>🌸 **<a href="https://github.com/visiuun/Video-fryer" style="color: #F48FB1; text-decoration: none;">Video-fryer</a>**:  For when you need to turn a video into glorious digital chaos. 🔥 (Python)</li>
-  <li>🌸 **<a href="https://github.com/visiuun/Bulk-folder-extractor" style="color: #F48FB1; text-decoration: none;">Bulk-folder-extractor</a>**: Extracts folders in bulk.  Efficiency is key!</li>
-  <li>🌸 **<a href="https://github.com/visiuun/Bulk-archive-compressor" style="color: #F48FB1; text-decoration: none;">Bulk-archive-compressor</a>**: Compresses archives in bulk.  Storage space is precious!</li>
-  <li>🌸 **<a href="https://github.com/visiuun/Image-fryer" style="color: #F48FB1; text-decoration: none;">Image-fryer</a>**: Make funny deep-fried images.  Because why not? 😂</li>
-  <li>🌸 **<a href="https://github.com/visiuun/PyR34-Downloader" style="color: #F48FB1; text-decoration: none;">PyR34-Downloader</a>**:  ... Archival purposes, again! 📚  (Python)</li>
-  <li>🌸 **<a href="https://github.com/visiuun/Duplicate-files-deleter" style="color: #F48FB1; text-decoration: none;">Duplicate-files-deleter</a>**:  Declutter your digital life! 🧹</li>
-  <li>🌸 **<a href="https://github.com/visiuun/Archive-Extraction-Tool" style="color: #F48FB1; text-decoration: none;">Archive-Extraction-Tool</a>**: Extracts archives in bulk.  (Yes, more bulk actions!)</li>
-  <li>🌸 **<a href="https://github.com/visiuun/Coomer.su-Downloader" style="color: #F48FB1; text-decoration: none;">Coomer.su-Downloader</a>**:  You know the drill by now... 😉</li>
-</ul>
+*   🌸 **[PC-info-gatherer](https://github.com/visiuun/pc-info-gatherer)**: Gathers PC info.  Pretty self-explanatory! (o˘◡˘o)
+*   🌸 **[Pic.re-downloader](https://github.com/visiuun/pic.re-downloader)**: Downloads pics from pic.re.  Another descriptive name!
+*   🌸 **[Video-fryer](https://github.com/visiuun/Video-fryer)**: Turn videos into digital chaos! 🔥 (Python)
+*   🌸 **[Bulk-folder-extractor](https://github.com/visiuun/Bulk-folder-extractor)**: Extracts folders in bulk.  Efficiency is key!
+*   🌸 **[Bulk-archive-compressor](https://github.com/visiuun/Bulk-archive-compressor)**: Compresses archives in bulk.  Save that space!
+*   🌸 **[Image-fryer](https://github.com/visiuun/Image-fryer)**: Make deep-fried images.  For funsies! (≧∇≦)/
+*   🌸 **[PyR34-Downloader](https://github.com/visiuun/PyR34-Downloader)**:  ... Archival reasons, you know. 📚 (Python)
+*   🌸 **[Duplicate-files-deleter](https://github.com/visiuun/Duplicate-files-deleter)**:  Deletes duplicate files.  Decluttering time! 🧹
+*   🌸 **[Archive-Extraction-Tool](https://github.com/visiuun/Archive-Extraction-Tool)**: Extracts archives in bulk.  Bulk actions are my jam!
+*   🌸 **[Coomer.su-Downloader](https://github.com/visiuun/Coomer.su-Downloader)**:  You get the idea by now... ( wink wink )
 
 <hr style="border-top: 2px dashed #F9A8D4; border-bottom: none; border-left: none; border-right: none; margin-top: 20px; margin-bottom: 20px;">
 
-<div align="center">
-  <h3 style="color: #F48FB1;">💖 Tools & Languages I Tinker With 💖</h3>
-</div>
+<h3 align="center" style="color: #F48FB1;">💖 Tools & Languages I Tinker With 💖</h3>
 
 <p align="center">
   <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
@@ -117,22 +101,16 @@
 
 <hr style="border-top: 2px dashed #F9A8D4; border-bottom: none; border-left: none; border-right: none; margin-top: 20px; margin-bottom: 20px;">
 
-<div align="center">
-  <h3 style="color: #F48FB1;">🌸 Currently Enchanted By... 🌸</h3>
-</div>
+<h3 align="center" style="color: #F48FB1;">🌸 Currently Enchanted By... 🌸</h3>
 
-<ul>
-  <li>✨ Reverse Engineering (slowly unraveling the mysteries!)</li>
-  <li>✨ Cryptography (deciphering secrets, one bit at a time!)</li>
-  <li>✨ Automation (making machines do the chores! 😉)</li>
-  <li>✨ Cute femboys (💖 ... just putting it out there!)</li>
-</ul>
+*   ✨ Reverse Engineering (slowly learning the secrets!) ( ⚯_⚯)
+*   ✨ Cryptography (deciphering things bit by bit!) (⌒∇⌒)
+*   ✨ Automation (making robots do my chores! 🤖)
+*   ✨ Cute femboys (💖 ... still putting it out there!) (*/ω＼*)
 
 <hr style="border-top: 2px dashed #F9A8D4; border-bottom: none; border-left: none; border-right: none; margin-top: 20px; margin-bottom: 20px;">
 
-<div align="center">
-  <h3 style="color: #F48FB1;">🌸 GitHub Garden Activity 🌸</h3>
-</div>
+<h3 align="center" style="color: #F48FB1;">🌸 GitHub Garden Activity 🌸</h3>
 
 <!--START_SECTION:github_activity-->
 <!--END_SECTION:github_activity-->
@@ -140,5 +118,5 @@
 <hr style="border-top: 2px dashed #F9A8D4; border-bottom: none; border-left: none; border-right: none; margin-top: 20px; margin-bottom: 20px;">
 
 <p align="center">
-  <small style="color: #F48FB1;">_Disclaimer: Use my code responsibly and ethically. I'm not liable if your deep-fried memes become sentient._ 😉</small>
+  <small style="color: #F48FB1;">_Disclaimer: Use my code responsibly!  I'm not responsible if your deep-fried memes gain sentience. ( >ω<)_</small>
 </p>
