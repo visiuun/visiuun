@@ -1,97 +1,97 @@
-<div align="left">
-  <img width="150" height="150" src="URL_TO_YOUR_ABSTRACT_IMAGE_OR_PROFILE_PIC" alt="Your Abstract Image or Profile Picture">
-</div>
+### Hi there 👋 I'm Vis!
 
-<div style="margin-left: 170px; margin-top: -150px;">
-  <h1 style="font-size: 2.5em; font-weight: bold;">About Me</h1>
-  <p style="font-size: 1.1em;">
-    I am a Full Stack Developer and a computer enthusiast. I have a good knowledge of HTML, CSS, Javascript, Lua, Python, C++, SQL, and more.
-  </p>
-</div>
+[![Visitor Badge](https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun)](https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun)
 
-<br><br><br><br><br><br>  <!-- Spacing to push counters down -->
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=visiuun)
 
-<hr style="border-top: 1px solid #ddd; margin-top: 20px; margin-bottom: 20px;">
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=visiuun&show_icons=true&count_private=true&theme=dark)
 
-<table style="width: 100%; text-align: center;">
-  <tr>
-    <td>
-      <div style="font-size: 2.5em; font-weight: bold;">10</div>
-      <div style="font-size: 0.9em; color: #999;">COMPLETED<br>COMMISSIONS</div>
-    </td>
-    <td>
-      <div style="font-size: 2.5em; font-weight: bold;">€567</div>
-      <div style="font-size: 0.9em; color: #999;">DONATIONS<br>RECEIVED</div>
-    </td>
-    <td>
-      <div style="font-size: 2.5em; font-weight: bold;">7</div>
-      <div style="font-size: 0.9em; color: #999;">AREAS OF<br>KNOWLEDGE</div>
-    </td>
-    <td>
-      <div style="font-size: 2.5em; font-weight: bold;">10846</div>
-      <div style="font-size: 0.9em; color: #999;">PORTFOLIO<br>VISITS</div>
-    </td>
-  </tr>
-</table>
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=visiuun&layout=compact&theme=dark)
 
-<hr style="border-top: 1px solid #ddd; margin-top: 20px; margin-bottom: 20px;">
+Based in Italy 🇮🇹 and fueled by caffeine and questionable internet content.  I like making things, especially if they automate tedious tasks.
 
-<br>
+**Currently:** Procrastinating on world domination, one Python script at a time.
 
-### 🛠️ Technologies & Skills
+**Email:** [visiuun@visiuun.com](mailto:visiuun@visiuun.com)
+**Website:** [visiuun.com](https://visiuun.com)
+**Instagram:** [Instagram.com/visiuun](https://Instagram.com/visiuun)
+
+---
+
+### Featured Projects: Because Someone Has to Automate *This* Stuff
+
+*   **[visiuun](https://github.com/visiuun/visiuun)**: My personal portfolio site.  Don't judge the HTML, I swear I know more than just `<marquee>`.
+*   **[Kemono.su-Downloader](https://github.com/visiuun/Kemono.su-Downloader)**: You know... for archiving purposes.  It's a *research tool*.
+*   **[VIS-Cypher-Advanced](https://github.com/visiuun/VIS-Cypher-Advanced)**:  My attempt at making a secure cipher.  Don't use it for anything *actually* important, okay? It's a learning exercise.
+
+### Other Notable Repos:
+
+*   **[PC-info-gatherer](https://github.com/visiuun/pc-info-gatherer)**: Gathers PC info.
+*   **[Pic.re-downloader](https://github.com/visiuun/pic.re-downloader)**: downloads pics from pic.re
+*   **[Video-fryer](https://github.com/visiuun/Video-fryer)**: Because sometimes you just need to turn a video into digital garbage. (Python)
+*   **[Bulk-folder-extractor](https://github.com/visiuun/Bulk-folder-extractor)**: Extracts folders in bulk.
+*   **[Bulk-archive-compressor](https://github.com/visiuun/Bulk-archive-compressor)**: Compresses archives in bulk.
+*   **[Image-fryer](https://github.com/visiuun/Image-fryer)**: Make funny deep fried images
+*   **[PyR34-Downloader](https://github.com/visiuun/PyR34-Downloader)**: Look, sometimes you just need to bulk download rule34. It's for... archival reasons. (Python)
+*   **[Duplicate-files-deleter](https://github.com/visiuun/Duplicate-files-deleter)**: Finds and deletes duplicate files.
+*   **[Archive-Extraction-Tool](https://github.com/visiuun/Archive-Extraction-Tool)**: Extracts archives in bulk.
+*   **[Coomer.su-Downloader](https://github.com/visiuun/Coomer.su-Downloader)**: Similar to kemono-downloader but for coomer
+
+---
+
+### Languages and Tools:
 
 <p align="left">
-    <a href="https://www.python.org" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
-    </a>
-    <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
-    </a>
-    <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
-    </a>
+  <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
+  </a>
+  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+  </a>
+  <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
+  </a>
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/>
+  </a>
+  <a href="https://git-scm.com/" target="_blank" rel="noreferrer">
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+  </a>
+  <a href="https://www.linux.org/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/>
+  </a>
     <a href="https://www.lua.org/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original.svg" alt="lua" width="40" height="40"/>
-    </a>
-    <a href="https://www.cplusplus.com/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/>
-    </a>
-    <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
-    </a>
-    <a href="https://www.microsoft.com/en-us/sql-server" target="_blank" rel="noreferrer">
-        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/microsoftsqlserver/microsoftsqlserver-plain-wordmark.svg" alt="mssql" width="40" height="40"/>
-    </a>
-    <!-- Add more icons as needed -->
-</p>
-
-<hr style="border-top: 1px solid #ddd; margin-top: 20px; margin-bottom: 20px;">
-
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=visiuun&show_icons=true&count_private=true&theme=dark" alt="visiuun GitHub Stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=visiuun&theme=dark" alt="visiuun GitHub Streak" />
-</p>
-
-<hr style="border-top: 1px solid #ddd; margin-top: 20px; margin-bottom: 20px;">
-
-### 🌐 Connect with me
-
-<p align="left">
-  <a href="mailto:visiuun@visiuun.com">
-    <img align="center" alt="Email" src="https://img.shields.io/badge/Email-visiuun@visiuun.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" />
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/lua/lua-original.svg" alt="lua" width="40" height="40"/>
   </a>
-  <a href="https://visiuun.com" target="_blank">
-    <img align="center" alt="Website" src="https://img.shields.io/badge/Website-visiuun.com-0077B5?style=for-the-badge&logo=firefox-browser&logoColor=white" />
+  <a href="https://www.python.org" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
   </a>
-  <a href="https://instagram.com/visiuun" target="_blank">
-    <img align="center" alt="Instagram" src="https://img.shields.io/badge/Instagram-visiuun-E4405F?style=for-the-badge&logo=instagram&logoColor=white" />
+  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/>
   </a>
 </p>
+
+---
+
+### Things I'm interested in:
+
+*   Reverse Engineering (slowly learning)
+*   Cryptography (also slowly learning)
+*   Automation
+*   Cute femboys
+
+### GitHub Activity:
+
+<!--START_SECTION:github_activity-->
+<!--END_SECTION:github_activity-->
+
+<!-- I'll uncomment this when I get around to setting it up! -->
+<!--
+ <a href="https://github.com/DenverCoder1/github-readme-streak-stats">
+  <img title="🔥Streak stats" alt="Mark streak" src="http://github-readme-streak-stats.herokuapp.com/?user=DenverCoder1&theme=dark&background=000000" />
+ </a>
+-->
+
+---
+
+_Disclaimer: I am not responsible for what you do with my code. Use at your own risk (and ethical discretion)._
