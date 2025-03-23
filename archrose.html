@@ -1,4 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archrose - Terms of Service</title>
+    <link rel="stylesheet" href="https://visiuun.altervista.org/data/Styles/terms.css">
+    <link rel="icon" href="https://visiuun.altervista.org/data/Icons/eye1.png" type="image/x-icon">
+
   <!-- Website Meta Data -->
   <meta name="theme-color" content="#36393e">
   <meta name="msapplication-TileColor" content="#36393e">
@@ -19,430 +27,142 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" href="https://visiuun.altervista.org/data/Icons/eye1.png" type="image/x-icon">
   <!-- Website Meta Data End -->
-</head>
 
-<div class="wrap">
-  <button id="myButton">
-    <span></span><span></span><span></span>
-    <span>If you are not redirected, click here or press <kbd>G</kbd></span>
-  </button>
-</div>
-
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
-@import url('https://unpkg.com/normalize.css') layer(normalize);
-
-@layer normalize, base, demo, rainbow, explode;
-
-@layer explode {
-  *,
-  *::after,
-  *::before {
-    transform-style: preserve-3d;
-  }
-  button span:not(:last-of-type) {
-    position: absolute;
-    inset: -2px;
-    border-radius: inherit;
-    border: inherit;
-    opacity: 0;
-  }
-
-  button span:last-of-type {
-    padding: 0.5rem 1rem;
-    display: flex;
-    align-items: center;
-    gap: 0.625rem;
-  }
-
-  button span:nth-of-type(3) {
-    background: linear-gradient(light-dark(#fff, #000) 0 0) padding-box;
-  }
-  button span:nth-of-type(2) {
-    background: linear-gradient(0deg, #0000 0, var(--border) 18px) border-box;
-  }
-  button span:nth-of-type(1) {
-    background: linear-gradient(#0000 0 0), linear-gradient(#0000 0 0),
-      linear-gradient(in lch longer hue 90deg, var(--base) 0 0) border-box 0 0 /
-        400% 100%;
-  }
-
-  .wrap button::before {
-    transform: translate3d(0, 0, -1px);
-  }
-
-  [data-explode='false'] {
-    .wrap,
-    canvas {
-      transition: transform 1s 1s;
-    }
-
-    .wrap button {
-      transition: outline-color 1s;
-    }
-
-    .wrap button span,
-    .wrap button::before {
-      transition: transform 1s, opacity 0s 1s, outline-color 1s, scale 0.25s;
-    }
-  }
-
-  .wrap button span:nth-of-type(3),
-  .wrap button {
-    outline: 4px dashed #0000;
-  }
-
-  [data-explode='true'] {
-    .wrap,
-    canvas {
-      transform: scale(var(--scale, 1)) rotateX(-32deg) rotateY(45deg)
-        rotateX(90deg);
-      transition: transform 1s;
-    }
-    .wrap button::before {
-      --i: -1;
-    }
-
-    .wrap button {
-      background: none;
-      outline: 4px dashed canvasText;
-      transition: outline-color 1s 1s;
-    }
-
-    .wrap button span,
-    .wrap button::before {
-      opacity: 1;
-      transform: translate3d(0, 0, calc(var(--i) * 50px));
-      transition: scale 0.25s 0.1s, transform 1s 1s, outline-color 1s 1s;
-    }
-
-    .wrap button span:nth-of-type(4) {
-      --i: 4;
-    }
-    .wrap button span:nth-of-type(1) {
-      --i: 1;
-    }
-    .wrap button span:nth-of-type(2) {
-      --i: 2;
-    }
-    .wrap button span:nth-of-type(3) {
-      --i: 3;
-      outline: 4px dashed color-mix(in hsl, canvas, canvasText);
-    }
-  }
-}
-
-@layer rainbow {
-  :root {
-    --base: oklch(70% 0.155 360);
-    --base: hsl(10 90% 70%);
-  }
-  .wrap > button,
-  .wrap > button span:nth-of-type(1),
-  .wrap > button::before,
-  .wrap > button::after {
-    animation-composition: add;
-    animation: rainbow 12s infinite linear,
-      rainbow 6s infinite linear var(--state, paused);
-  }
-
-  .wrap > button {
-    background: linear-gradient(light-dark(#fff, #000) 0 0) padding-box,
-      linear-gradient(0deg, #0000 0, var(--border) 18px) border-box,
-      linear-gradient(in lch longer hue 90deg, var(--base) 0 0) border-box 0 0 /
-        400% 100%;
-  }
-
-  .wrap > button::before {
-    background: linear-gradient(#0000 0 0), linear-gradient(#0000 0 0),
-      linear-gradient(in lch longer hue 90deg, var(--base) 0 0) border-box 0 0 /
-        400% 100%;
-  }
-
-  .wrap > button::after {
-    background: linear-gradient(#0000 0 0) padding-box,
-      linear-gradient(#0000 0 0) border-box,
-      linear-gradient(in lch longer hue 90deg, var(--base) 0 0) border-box 0 0 /
-        400% 100%;
-    mask: linear-gradient(#0000 0 0), linear-gradient(#fff 0 0);
-    mask-clip: padding-box, border-box;
-    mask-composite: intersect;
-  }
-
-  button:is(:hover) {
-    --state: running;
-  }
-
-  @keyframes rainbow {
-    to {
-      background-position: 0 0, 0 0, 400% 0;
-    }
-  }
-}
-
-@layer demo {
-  .wrap:has(:active) {
-    scale: 0.99;
-  }
-
-  .wrap {
-    transition: scale 0.25s;
-  }
-
-  .wrap,
-  canvas {
-    transform: scale(var(--scale, 1));
-  }
-
-  .wrap button {
-    --border: color-mix(in hsl, canvas, canvasText 15%);
-    border-radius: 6px;
-    border: calc(var(--border-width, 2) * 1px) solid #0000;
-    color: color-mix(in hsl, canvasText, canvas 34%);
-    font: inherit;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-    padding: 0;
-
-    /* ::after is used as the :focus-visible outline, do not remove */
-    &::after {
-      content: '';
-      position: absolute;
-      border: calc(var(--border-width, 2) * 1px) solid #0000;
-      inset: -8px;
-      border-radius: 14px;
-      opacity: 0;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      z-index: -2;
-      filter: blur(calc(var(--blur, 10) * 1px))
-        brightness(var(--brightness, 1.25));
-      inset: 60% 0 0 0;
-      border-radius: 50% 50% 6px 6px / 50% 50% 6px 6px;
-      transform-origin: 50% 25%;
-      opacity: 1;
-      scale: 0.6 0.4;
-      transition: scale 0.24s;
-    }
-
-    kbd {
-      font: inherit;
-      font-size: 0.75em;
-      opacity: var(--active, 0.6);
-      border: 1px solid color-mix(in hsl, canvasText, #0000);
-      padding: 0.2em;
-      border-radius: 4px;
-      letter-spacing: 2px;
-    }
-  }
-
-  button:is(:hover, :focus-visible)::before {
-    scale: 1.1 1.25;
-  }
-
-  button:focus-visible::after {
-    opacity: 0.6;
-  }
-}
-
-@layer base {
-  :root {
-    --font-size-min: 16;
-    --font-size-max: 20;
-    --font-ratio-min: 1.2;
-    --font-ratio-max: 1.33;
-    --font-width-min: 375;
-    --font-width-max: 1500;
-  }
-
-  html {
-    color-scheme: light dark;
-  }
-
-  [data-theme='light'] {
-    color-scheme: light only;
-  }
-
-  [data-theme='dark'] {
-    color-scheme: dark only;
-  }
-
-  :where(.fluid) {
-    --fluid-min: calc(
-      var(--font-size-min) * pow(var(--font-ratio-min), var(--font-level, 0))
-    );
-    --fluid-max: calc(
-      var(--font-size-max) * pow(var(--font-ratio-max), var(--font-level, 0))
-    );
-    --fluid-preferred: calc(
-      (var(--fluid-max) - var(--fluid-min)) /
-        (var(--font-width-max) - var(--font-width-min))
-    );
-    --fluid-type: clamp(
-      (var(--fluid-min) / 16) * 1rem,
-      ((var(--fluid-min) / 16) * 1rem) -
-        (((var(--fluid-preferred) * var(--font-width-min)) / 16) * 1rem) +
-        (var(--fluid-preferred) * var(--variable-unit, 100vi)),
-      (var(--fluid-max) / 16) * 1rem
-    );
-    font-size: var(--fluid-type);
-  }
-
-  *,
-  *:after,
-  *:before {
-    box-sizing: border-box;
-  }
-
-  body {
-    background: light-dark(#fff, #000);
-    display: grid;
-    place-items: center;
-    min-height: 100vh;
-    font-family: 'Geist', 'SF Pro Text', 'SF Pro Icons', 'AOS Icons',
-      'Helvetica Neue', Helvetica, Arial, sans-serif, system-ui;
-  }
-
-  body::before {
-    --size: 45px;
-    --line: color-mix(in hsl, canvasText, transparent 70%);
-    content: '';
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    background: linear-gradient(
-          90deg,
-          var(--line) 1px,
-          transparent 1px var(--size)
-        )
-        50% 50% / var(--size) var(--size),
-      linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
-        var(--size) var(--size);
-    mask: linear-gradient(-20deg, transparent 50%, white);
-    top: 0;
-    transform-style: flat;
-    pointer-events: none;
-    z-index: -1;
-  }
-
-  .bear-link {
-    color: canvasText;
-    position: fixed;
-    top: 1rem;
-    left: 1rem;
-    width: 48px;
-    aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    opacity: 0.8;
-  }
-
-  :where(.x-link, .bear-link):is(:hover, :focus-visible) {
-    opacity: 1;
-  }
-
-  .bear-link svg {
-    width: 75%;
-  }
-
-  /* Utilities */
-  .sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-  }
-}
-
-div.tp-dfwv {
-  width: 268px;
-
-  * {
-    text-transform: lowercase;
-  }
+ <style>
+      .hero::before {
+background: url('https://cdn.discordapp.com/icons/1235548464662843393/eac3a9d8b0b73e0573eb076011355470.webp') no-repeat center center / cover !important;
 }
 </style>
 
-<script type="module">
-import confetti from 'https://cdn.skypack.dev/canvas-confetti'
+</head>
+<body>
 
-const update = () => {
-  document.documentElement.dataset.theme = config.theme
-  document.documentElement.dataset.explode = config.explode
-  document.documentElement.style.setProperty('--scale', config.scale)
-}
+    <section class="hero">
+        <h1>Archrose - Terms of Service</h1>
+        <p>Effective Date: March 23, 2025.</p>
+    </section>
 
-const sync = (event) => {
-  if (
-    !document.startViewTransition ||
-    event.target.controller.view.labelElement.innerText !== 'Theme'
-  )
-    return update()
-  document.startViewTransition(() => update())
-}
+    <div class="content">
+        <h2>1. Preamble and Acceptance of Terms</h2>
+        <p>Welcome to Archrose, a Roblox game experience and associated Discord server (collectively, the "Services") created and operated by Visiuun and Aleksandr (hereinafter referred to as "Developers," "we," "us," or "our"). These Terms of Service ("Terms"), constitute a legally binding agreement between you ("User," "you," or "player") and the Developers regarding your access to and use of Archrose, including the Roblox game, the Archrose Discord server, and all related services, features, content, and functionalities (collectively, the "Services").</p>
+        <p>By accessing, playing, participating in, or otherwise using any part of the Services, including the Archrose Roblox game and/or the Archrose Discord server, you expressly acknowledge and represent that you have carefully read, fully understand, and unequivocally agree to be bound by all provisions of these Terms. This agreement governs your relationship with us in relation to the Services. If you do not agree to each and every term and condition set forth herein, you are expressly prohibited from accessing or using the Services and must immediately cease all gameplay, Discord server participation, and related activities.</p>
+        <p>Your acceptance of these Terms is a condition precedent to your right to use the Services, including playing Archrose and participating in the Archrose Discord server. Continued use of the Services shall be deemed as ongoing and reaffirming consent to these Terms, including any modifications or amendments made in accordance with Section 11.</p>
 
-// cmd + G stuff...
-const CMD = 91
-const MOD = 71
-const G_KEY = 71  // Keycode for "G"
+        <h2>2. Age Restriction, Content Warning, and Parental Responsibility</h2>
+        <p><b>THE SERVICES, INCLUDING BOTH THE ARCHROSE ROBLOX GAME AND THE ARCHROSE DISCORD SERVER, ARE DESIGNED AND INTENDED FOR MATURE AUDIENCES ONLY. BOTH THE GAME AND THE DISCORD SERVER MAY CONTAIN EXPLICIT THEMES OF MACROPHILIA (SIZE DIFFERENCE) AND OTHER FETISH-RELATED CONTENT, WHICH MAY BE CONSIDERED OFFENSIVE, DISTURBING, OR INAPPROPRIATE BY SOME INDIVIDUALS.</b> This content may be present in game elements, user-generated content within the game, and user-shared content and discussions on the Discord server.</p>
+        <p><b>MINIMUM AGE REQUIREMENT:</b> You must be at least 16 years of age, or the age of legal majority in your jurisdiction, whichever is higher, to access and use the Services, including both the Archrose Roblox game and the Archrose Discord server. By proceeding to use the Services, you affirmatively warrant and represent that you meet or exceed this minimum age requirement. If you are under the age of 16, or the applicable age of majority, you are strictly prohibited from using the Services, and any such access is unauthorized and in violation of these Terms.</p>
+        <p><b>PARENTAL/GUARDIAN RESPONSIBILITY:</b> We strongly advise parents and legal guardians to exercise due diligence in monitoring their children's online activities, including their participation in online game communities and Discord servers. If you are a parent or guardian and become aware that your child has accessed the Services without your consent and in violation of these age restrictions, please contact us immediately. While we implement age gating through these Terms, we cannot guarantee prevention of access by underage users and are not responsible for unauthorized access. Parental supervision and control are paramount.</p>
+        <p><b>CONTENT WARNING ACKNOWLEDGEMENT:</b> You acknowledge and understand the mature themes of macrophilia and potentially other fetish-related content present within the Services, including both the Archrose Roblox game and the Archrose Discord server. You accept that you may encounter content, scenarios, user interactions, and user-shared art related to these themes. You agree that you are solely responsible for evaluating the suitability of the Services' content for yourself and accept all risks associated with exposure to such themes.</p>
 
-const STATE = {
-  cmd: false,
-  mod: false,
-  g: false
-}
+        <h2>3. User Conduct, Responsibilities, and Prohibited Activities within the Services</h2>
+        <p>Your use of the Services is contingent upon your adherence to these Terms, Roblox's Community Rules (within the game), Discord's Terms of Service and Community Guidelines (within the Discord server), and all applicable laws and regulations. <b>You bear the complete and exclusive responsibility for your conduct and all activities within the Services, encompassing all interactions with other users, interpretation of content, and any consequences arising from your use of the Services. This responsibility extends to both your gameplay in Archrose and your participation in the Archrose Discord server.</b> We provide the Services as entertainment platforms and, while we establish guidelines, we neither possess the capacity nor undertake the obligation to actively monitor all user conduct in real-time across both the game and the Discord server or to preemptively prevent all potential instances of inappropriate behavior.  You expressly agree to the following comprehensive list of prohibited activities, applicable to both the Archrose Roblox game and the Archrose Discord server, unless explicitly stated otherwise:</p>
+        <ol type="a">
+            <li><b>Harassment, Bullying, and Abuse:</b> Engaging in any form of harassment, bullying, threatening, stalking, abusive, discriminatory, or otherwise harmful behavior towards other users across the Services, whether verbally, textually, through in-game actions, Discord messages, or any other means. This includes cyberbullying, personal attacks, hate speech, offensive language, and targeted harassment on the Discord server.</li>
+            <li><b>Exploitation of Game Mechanics (Game Specific):</b>  Intentionally exploiting any glitches, bugs, loopholes, design flaws, or unintended game mechanics within the Roblox game for personal gain, unfair advantages, or disruption of the game experience. This is specifically applicable to gameplay within Archrose Roblox.</li>
+            <li><b>Cheating and Unauthorized Software (Game Specific):</b> Utilizing any third-party software, applications, programs, scripts, cheats, hacks, bots, automation tools, or other unauthorized aids that could provide unfair advantages or harm the game. This is specifically applicable to gameplay within Archrose Roblox.</li>
+            <li><b>Violation of Platform Terms and Policies:</b>  Engaging in any activity that contravenes Roblox's Terms of Use, Community Rules, Privacy Policy, or Discord's Terms of Service, Community Guidelines, or any other policies, guidelines, or regulations established by either the Roblox or Discord platforms. You are responsible for understanding and complying with all applicable platform rules in addition to these Terms.</li>
+            <li><b>Circumvention of Age Restrictions:</b>  Underage users are strictly forbidden from attempting to bypass or circumvent age restrictions implemented for the Services, including for both the Roblox game and the Discord server.</li>
+            <li><b>Sharing Inappropriate, Illegal, or Harmful Content (Game and Discord):</b>  Generating, uploading, transmitting, distributing, or otherwise making available within the Services, including in-game chat, user-generated content within the game, and on the Discord server (text channels, voice channels, direct messages, art sharing channels, etc.), any content, including text, images, audio, video, or links, that is illegal, unlawful, harmful, offensive, defamatory, libelous, obscene, pornographic, sexually suggestive, graphically violent, threatening, abusive, harassing, tortious, invasive of another's privacy, hateful, racially, ethnically, or otherwise objectionable. <b>This explicitly includes sharing, soliciting, or promoting content depicting illegal acts, hate speech, or exploitation, abuse, or endangerment of children, even if such content relates to macrophilia or other fetish themes.</b> This also includes linking to external websites or services containing such content.</li>
+            <li><b>Unauthorized Commercial Activities (Game and Discord):</b>  Engaging in any form of unauthorized commercial activity within the Services, including advertising, soliciting, selling, trading, or bartering virtual items, accounts, services, or Discord server roles for real-world currency or other consideration without our explicit written consent. This includes unauthorized promotion of external websites, products, or services within the Discord server.</li>
+            <li><b>Impersonation and Misrepresentation (Game and Discord):</b>  Impersonating Visiuun, Aleksandr, game moderators, Discord server moderators, administrators, other developers, Roblox staff, Discord staff, or any other individual or entity in a deceptive or misleading manner across the Services.</li>
+            <li><b>Disruption of Service Operations and Infrastructure (Game and Discord):</b>  Taking any action that disrupts, interferes with, or degrades the normal operation of the Services, including the Roblox game, Discord server, their respective servers, networks, or associated infrastructure. This includes denial-of-service attacks, spamming, flooding, mail-bombing, crashing, overloading servers, or excessive consumption of resources on either platform.</li>
+            <li><b>Violation of Privacy and Data Protection (Game and Discord):</b>  Collecting, harvesting, or storing personal information of other users from either the game or the Discord server without their express consent. Violating the privacy rights of other players in any manner across the Services. Sharing private Discord messages or information without consent is prohibited.</li>
+            <li><b>Account Sharing and Unauthorized Access (Game and Discord):</b> Sharing your Archrose/Roblox account or Discord account credentials with any third party or allowing unauthorized access to your accounts for either platform. You are solely responsible for maintaining the confidentiality of your account information for both the game and the Discord server and for all activities that occur under your accounts.</li>
+            <li><b>Spamming and Excessive Self-Promotion (Discord Specific):</b>  Excessive posting of repetitive messages, irrelevant content, or unsolicited self-promotion within the Discord server channels, especially in channels not designated for such content.</li>
+            <li><b>Circumventing Discord Server Rules or Moderation (Discord Specific):</b>  Attempting to evade Discord server rules, moderation actions (bans, mutes, warnings), or instructions from server moderators or administrators. Creating alternate accounts to evade bans or restrictions on the Discord server is strictly prohibited.</li>
+            <li><b>Misuse of Discord Bots or Features (Discord Specific):</b>  Intentionally misusing Discord bots, commands, or server features in a way that disrupts the server, harasses other users, or is contrary to the intended purpose of those features.</li>
+            <li><b>Linking to Inappropriate External Content (Discord Specific):</b> Sharing links to external websites, services, or content that would violate these Terms if shared directly within the Services, including links to pornographic, illegal, harmful, or offensive material, even if such content relates to macrophilia or other fetish themes, if it crosses into prohibited categories like child exploitation or hate speech.</li>
+            <li><b>Any Other Unlawful or Harmful Conduct:</b>  Engaging in any other conduct that is unlawful, illegal, unethical, or harmful to the Services, its users, the Developers, Roblox, Discord, or any third party, as determined at our sole discretion, applicable to both the game and the Discord server.</li>
+        </ol><br>
 
-const redirectURL = 'https://visiuun.altervista.org/archrose/terms';
-const fallbackURL = 'https://visiuun.altervista.org/archrose/terms';
-const redirectDelay = 2000; // Delay in milliseconds (2 seconds)
+        <h4>Reporting Inappropriate Conduct and Developer/Moderator Intervention</h4>
+        <p>If you encounter another user engaging in conduct that violates these Terms, Roblox's Community Rules (in-game), or Discord's Terms of Service/Community Guidelines (on Discord), within the Services, we encourage you to utilize the platform-specific reporting features as the primary and most effective method for addressing such behavior. Within the Roblox game, use Roblox's reporting tools. Within the Discord server, use Discord's reporting features and contact Discord server moderators or administrators, if available. For issues directly related to the Services themselves, technical malfunctions across platforms, or specific concerns regarding these Terms that platform-specific reporting cannot address, you may also contact us directly at <a href="mailto:report-abuse@visiuun.com">report-abuse@visiuun.com</a>.  Please provide detailed information and evidence when submitting reports, specifying whether the issue occurred in the Roblox game or on the Discord server.</p>
+        <p><b>While we encourage user reporting and may, at our sole and unfettered discretion, elect to investigate and take remedial action against egregious violations of these Terms or applicable laws within either the Roblox game or the Discord server, you expressly acknowledge and agree that the Developers are under no legal or contractual obligation to actively monitor user conduct across both platforms, intervene in every user dispute, resolve every reported issue to the user's subjective satisfaction, or provide any specific level of moderation or enforcement on either platform. Our capacity to intervene is inherently limited by the respective platform architectures of Roblox and Discord, available moderation tools on each platform, and our own finite resources.  Any moderation efforts undertaken by the Developers or designated moderators are provided strictly on a "best efforts" basis and without any representation, warranty, or guarantee, express or implied, that we will successfully prevent, detect, or fully rectify all instances of inappropriate user conduct across the Services.  You explicitly understand and accept that using the Services necessarily entails inherent risks associated with exposure to the potentially unpredictable behavior of other online users on both the game and the Discord server, and you voluntarily assume all such risks.  The Developers expressly disclaim any and all liability for user-generated content, communications, and the actions or inactions of individual users within the Services, including both the Roblox game and the Archrose Discord server, even if such content or conduct is deemed harmful, offensive, illegal, or in violation of these Terms. This disclaimer applies equally to user behavior within the game and on the Discord server.</b></p>
 
-const autoRedirect = () => {
-    window.location.href = redirectURL;
+        <h2>4. Service Modifications, Updates, Availability, and Termination</h2>
+        <p>The Developers reserve the absolute, unconditional, and unilateral right to, at any time and for any reason, without prior notice or any liability whatsoever to you or any third party, modify, update, patch, alter, change, suspend, restrict access to, or permanently discontinue the Services, or any aspect, feature, component, or functionality thereof, whether temporarily or permanently. This encompasses, without limitation, modifications to the Archrose Roblox game (as detailed in the previous version of these terms) and also includes the right to modify, suspend, or terminate the Archrose Discord server, its channels, features, access, or overall operation.  This includes changes to server rules, moderation policies, channel structure, and server availability.</p>
+        <p>You expressly acknowledge and agree that the Developers shall not be held liable for any loss, damage, cost, or expense, whether direct, indirect, incidental, consequential, special, punitive, or exemplary, arising out of or in connection with any such modification, update, suspension, restriction, or discontinuation of the Services, including the Discord server, even if such actions result in the loss of game progress, virtual items, in-game currency, Discord server access, server roles, user-generated content shared on Discord, or any other tangible or intangible losses, or negatively impact your experience with the Services in any manner.  We provide the Services, including the Discord server, on an "as-is" and "as-available" basis and do not guarantee uninterrupted, error-free, or continuous access to either the game or the Discord server. The Developers are not responsible for any game downtime, server outages (Roblox or Discord), technical malfunctions, data loss (game or Discord data), or any other technical issues that may occur across the Services, regardless of cause or duration.</p>
+        <p>Furthermore, the Developers reserve the right to terminate or suspend your access to the Services, in whole or in part, including access to both the Roblox game and the Discord server, immediately, without prior notice or liability, for any reason or no reason, including, but not limited to, your breach of these Terms, suspected illegal activity on either platform, prolonged inactivity in the game or on the Discord server, engaging in conduct that we, in our sole discretion, deem harmful to other users, the Developers, or third parties, technical issues, unforeseen service disruptions, or for any business reason at the Developers' sole discretion. Upon termination, your right to use the Services will cease immediately, and we shall have no obligation to provide refunds, compensation, or access to User Content, virtual items, Discord server roles, or content shared on the Discord server.</p>
 
-    // Fallback redirect in case the first one fails (e.g., due to CSP).  Useful to avoid infinite loop.
-    setTimeout(() => {
-        window.location.href = fallbackURL;
-    }, redirectDelay);
-};
+        <h2>5. Intellectual Property Rights</h2>
+        <p>Archrose, including all Game Content (as defined previously for the Roblox game) and also extending to content related to Archrose on the Discord server, encompassing, without limitation, server design, channel structure, server logos, graphics used on the Discord server, bot configurations, announcements, and official communications by the Developers on the Discord server ("Discord Server Content"), are the exclusive property of Visiuun and Aleksandr, or our licensors, and are rigorously protected by applicable copyright laws, trademark laws, patent laws, trade secret laws, moral rights laws, communications regulations, statutes, and other intellectual property laws and international treaties, both within Canada and worldwide. All intellectual property rights in and to Archrose, the Game Content, and the Discord Server Content are expressly reserved and retained by the Developers and our licensors.</p>
+        <p>Subject to your strict and ongoing compliance with all provisions of these Terms, the Developers grant you a limited, non-exclusive, personal, revocable, non-transferable, non-sublicensable, and terminable license to access and use the Services, including playing Archrose and participating in the Archrose Discord server, solely for your personal, private, non-commercial entertainment and community engagement purposes, strictly in accordance with the intended functionalities of the Services and these Terms. This limited license explicitly does not convey to you any ownership rights, title, or intellectual property rights in or to Archrose, the Game Content, or the Discord Server Content.  The prohibitions listed in the previous version of these terms regarding Game Content now also apply to Discord Server Content, mutatis mutandis, where applicable to the nature of Discord server content. Unauthorized use of Discord Server Content is also prohibited.</p>
+        <p>All rights not expressly granted to you under these Terms are explicitly reserved by Visiuun and Aleksandr. Any unauthorized use of the Services, the Game Content, or the Discord Server Content constitutes a material breach of these Terms and may violate applicable intellectual property laws, platform terms of service, and community guidelines, subjecting you to potential civil and criminal penalties, as well as platform-specific sanctions (e.g., bans from Roblox or Discord).</p>
 
+        <h2>6. Disclaimer of Warranties</h2>
+        <p>THE SERVICES, INCLUDING BOTH THE ARCHROSE ROBLOX GAME AND THE ARCHROSE DISCORD SERVER, ARE PROVIDED ON A STRICTLY "AS IS" AND "AS AVAILABLE" BASIS, WITH ALL FAULTS AND DEFECTS, AND WITHOUT WARRANTIES, REPRESENTATIONS, OR CONDITIONS OF ANY KIND, EITHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE. TO THE FULLEST EXTENT PERMISSIBLE PURSUANT TO APPLICABLE LAW, VISIUUN AND ALEKSANDR, ON BEHALF OF OURSELVES, OUR AFFILIATES, PARTNERS, LICENSORS, AND SERVICE PROVIDERS, HEREBY EXPRESSLY, UNEQUIVOCALLY, AND IRREVOCABLY DISCLAIM ALL WARRANTIES, REPRESENTATIONS, AND CONDITIONS, WHETHER EXPRESS, IMPLIED, STATUTORY, OR ARISING FROM COURSE OF DEALING OR USAGE OF TRADE, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, TITLE, QUIET ENJOYMENT, ACCURACY, RELIABILITY, COMPLETENESS, TIMELINESS, SECURITY, DATA SECURITY, DATA INTEGRITY, AVAILABILITY, UNINTERRUPTED OPERATION, ERROR-FREE OPERATION, FREEDOM FROM VIRUSES, BUGS, WORMS, TROJAN HORSES, OR OTHER HARMFUL COMPONENTS, OR THAT DEFECTS WILL BE CORRECTED. THIS DISCLAIMER OF WARRANTIES APPLIES EQUALLY TO BOTH THE ARCHROSE ROBLOX GAME AND THE ARCHROSE DISCORD SERVER. WE MAKE ABSOLUTELY NO WARRANTIES, ENDORSEMENTS, OR GUARANTEES, EXPRESS OR IMPLIED, REGARDING ANY ASPECT OF THE SERVICES, INCLUDING, WITHOUT LIMITATION, THE FOLLOWING, APPLICABLE TO BOTH THE GAME AND THE DISCORD SERVER WHERE RELEVANT:</p>
+        <ul>
+            <li><b>Service Performance and Functionality:</b> We do not warrant that the Services, including the game and Discord server, will perform at any particular level, speed, quality, or in any specific manner, or that they will be compatible or interoperable with your device, system, or Discord client. We do not guarantee that the Services will be free from errors, bugs, glitches, or technical issues on either platform.</li>
+            <li><b>User Experience and Satisfaction:</b> We make no warranties, representations, or guarantees whatsoever regarding your user experience, enjoyment, satisfaction, or level of engagement with the Services, including with the game or the Discord server community. We do not warrant that you will find either the game or the Discord server entertaining, enjoyable, or suitable for your tastes or preferences.</li>
+            <li><b>User Conduct and Interactions:</b> We offer absolutely no warranties or guarantees concerning the conduct, behavior, actions, or interactions of other users within the Services, including in both the game and on the Discord server. You explicitly acknowledge and accept that you may encounter user-generated content, communications, or behavior that you find offensive, inappropriate, objectionable, harmful, or illegal on either platform, and we expressly disclaim any responsibility or liability for such experiences on either platform.</li>
+            <li><b>Content Interpretation and Subjectivity:</b> We are not responsible for, and disclaim all warranties regarding, user interpretations, perceptions, or subjective understandings of the Services' themes, content, messages, or artistic expression, whether within the game or on the Discord server. This includes subjective perceptions of content related to macrophilia or other fetishes shared by users on the Discord server.</li>
+            <li><b>Moderation Effectiveness and Content Control:</b> We provide no warranty, guarantee, or representation of any kind regarding the effectiveness, comprehensiveness, or consistency of our moderation efforts, content filtering, or user conduct enforcement mechanisms across the Services, including both the game and the Discord server. We expressly disclaim any and all liability for user-generated content, communications, actions, or inactions that may be considered inappropriate, offensive, harmful, illegal, or in violation of these Terms by some users on either platform, even if such instances are reported to us.  We do not warrant a perfectly moderated or sanitized environment within either the game or the Discord server.</li>
+            <li><b>Data Security, Privacy, and Virtual Assets:</b> While we implement commercially reasonable security measures, we provide no warranty or guarantee regarding the absolute security, privacy, or integrity of your account, personal data, game data, virtual items, in-game currency, Discord server roles, or any other virtual assets associated with the Services. We are not liable for any loss, theft, unauthorized access, corruption, deletion, or modification of any such data or virtual assets, regardless of cause, across both platforms.</li>
+            <li><b>Continuous and Uninterrupted Service:</b> We do not warrant or guarantee that the Services, including both the game and the Discord server, will be continuously available, uninterrupted, or free from downtime, server outages, or technical issues. We disclaim all liability for any disruptions, delays, or failures in the provision of the Services on either platform.</li>
+        </ul>
+        <p>YOU EXPRESSLY ACKNOWLEDGE, UNDERSTAND, AND IRREVOCABLY AGREE THAT YOUR ACCESS TO AND USE OF, OR INABILITY TO ACCESS OR USE, THE SERVICES, INCLUDING BOTH THE ARCHROSE ROBLOX GAME AND THE ARCHROSE DISCORD SERVER, IS ENTIRELY, SOLELY, AND EXCLUSIVELY AT YOUR OWN PERIL AND RISK. THE ENTIRE RISK AS TO SATISFACTORY QUALITY, PERFORMANCE, ACCURACY, EFFORT, AND ALL OTHER ASPECTS OF THE SERVICES RESTS SOLELY AND COMPLETELY WITH YOU, THE USER.</p>
 
+        <h2>7. Extensive Limitation of Liability</h2>
+        <p>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE MANDATORY LAW, IN NO EVENT SHALL VISIUUN AND ALEKSANDR, NOR OUR AFFILIATES, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, REPRESENTATIVES, SUPPLIERS, LICENSORS, SUCCESSORS, OR ASSIGNS, BE LIABLE TO YOU OR ANY THIRD PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR STATUTORY DAMAGES, OR ANY DAMAGES WHATSOEVER (INCLUDING, WITHOUT LIMITATION, DAMAGES FOR PERSONAL INJURY, PAIN AND SUFFERING, EMOTIONAL DISTRESS, LOSS OF PRIVACY, LOSS OF PROFITS, LOSS OF REVENUE, LOSS OF GOODWILL, BUSINESS INTERRUPTION, LOSS OF USE, LOSS OF DATA, LOSS OF VIRTUAL ITEMS, COST OF PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES, OR OTHER INTANGIBLE LOSSES), ARISING OUT OF OR IN ANY WAY RELATED TO YOUR ACCESS TO OR USE OF, OR INABILITY TO ACCESS OR USE, THE SERVICES, INCLUDING BOTH THE ARCHROSE ROBLOX GAME AND THE ARCHROSE DISCORD SERVER, OR ANY CONTENT THEREIN (INCLUDING CONTENT ON THE DISCORD SERVER), THESE TERMS, OR ANY MATTER RELATED TO THE SERVICES, REGARDLESS OF THE LEGAL THEORY OR BASIS OF LIABILITY (WHETHER BASED IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, STATUTE, OR ANY OTHER LEGAL THEORY), AND EVEN IF WE HAVE BEEN EXPRESSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES OR SUCH DAMAGES WERE FORESEEABLE. THIS EXTREMELY BROAD AND COMPREHENSIVE LIMITATION OF LIABILITY APPLIES, WITHOUT ANY LIMITATION WHATSOEVER, TO:</p>
+        <ul>
+            <li><b>Liability Arising from User Conduct and User-Generated Content Across Services:</b>  Any and all liability arising from or relating to the conduct, actions, omissions, or inactions of other users within the Services, including within both the Archrose Roblox game and the Archrose Discord server. This includes, but is not limited to, instances of harassment, bullying, offensive behavior, inappropriate content (including content shared on the Discord server), illegal activities, or user-generated content that is deemed harmful, offensive, or in violation of these Terms, whether occurring in-game or on the Discord server.  For absolute clarity, we explicitly state that we bear no liability for instances of user sexualization of minors, child endangerment, or other illegal user conduct occurring within the Services, including on the Discord server, as such actions are unequivocally outside of our direct control, are initiated and perpetrated by individual users, and are the sole and exclusive responsibility of the offending user(s), although we may, at our sole discretion and on a "best efforts" basis, take reasonable steps to address reported issues within the inherent limitations of our capabilities and the respective platforms (Roblox and Discord).</li>
+            <li><b>Liability Arising from Game Defects, Errors, and Technical Issues (Game Specific):</b> Any and all liability arising from any errors, bugs, glitches, defects, inaccuracies, or malfunctions in the Archrose Roblox game, or any interruptions, delays, failures, or disruptions in the provision of the Roblox game, regardless of cause, duration, or severity. This is specifically related to the Roblox game.</li>
+            <li><b>Liability Arising from Discord Server Issues (Discord Specific):</b> Any and all liability arising from any errors, bugs, glitches, defects, inaccuracies, or malfunctions in the Archrose Discord server, or any interruptions, delays, failures, or disruptions in the provision of the Discord server, including server outages, channel malfunctions, or bot errors, regardless of cause, duration, or severity. This is specifically related to the Discord server.</li>
+            <li><b>Liability for Loss of Data, Virtual Items, or Virtual Assets Across Services:</b> Any and all liability for any loss, deletion, corruption, alteration, unauthorized access, theft, or misappropriation of user data, account information, virtual items (in-game), in-game currency, Discord server roles, user-shared content on Discord, or any other digital property associated with the Services, for any reason whatsoever, across both the game and the Discord server.</li>
+            <li><b>Liability for Personal Injury, Emotional Distress, and Psychological Harm Arising from Service Use:</b> To the maximum extent permissible under applicable law, any and all claims, demands, actions, or causes of action for personal injury, bodily harm, emotional distress, psychological harm, mental anguish, or any other form of physical or psychological injury or damage allegedly arising from or in any way related to your use of the Services, including both the Roblox game and the Archrose Discord server.</li>
+            <li><b>Liability Arising from Third-Party Links, Services, and Content Accessed Through Services:</b> Any and all liability arising from or related to your interactions, transactions, or engagements with third-party websites, services, resources, or content that may be linked to, integrated with, or accessible through the Services, including links shared on the Discord server or within the game, including, without limitation, any third-party advertisements or promotional materials encountered on either platform.</li>
+            <li><b>Liability for Any and All Other Damages, Losses, or Liabilities Related to Service Use:</b>  This comprehensive limitation of liability extends to encompass any and all other claims, demands, actions, causes of action, losses, damages, liabilities, costs, and expenses of any kind or nature whatsoever, whether direct, indirect, incidental, special, consequential, punitive, exemplary, or statutory, and regardless of the legal theory or basis of liability, arising from your use of the Services, including both the game and the Discord server, even if foreseeable.</li>
+        </ul>
+        <p>IN NO EVENT SHALL THE TOTAL AGGREGATE, CUMULATIVE, AND COLLECTIVE LIABILITY OF VISIUUN AND ALEKSANDR, AND ALL INDEMNIFIED PARTIES, ARISING OUT OF OR IN CONNECTION WITH THESE TERMS, YOUR USE OF THE SERVICES, INCLUDING BOTH THE ARCHROSE ROBLOX GAME AND THE ARCHROSE DISCORD SERVER, OR ANY MATTER RELATED TO THE SERVICES, EXCEED THE MINIMAL AMOUNT OF ONE HUNDRED CANADIAN DOLLARS (CAD $100.00), OR THE TOTAL AMOUNT OF FEES ACTUALLY PAID BY YOU TO THE DEVELOPERS FOR ACCESS TO ARCHROSE IN THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM, WHICHEVER AMOUNT IS LOWER. THIS MONETARY LIMITATION SHALL APPLY EVEN IF ANY REMEDY AVAILABLE TO YOU FAILS OF ITS ESSENTIAL PURPOSE OR IS DEEMED INEFFECTIVE FOR ANY REASON. This limitation applies to liability arising from the use of both the Roblox game and the Discord server.</p>
+        <p>SOME JURISDICTIONS MAY NOT ALLOW THE COMPLETE EXCLUSION OR LIMITATION OF LIABILITY FOR CERTAIN TYPES OF DAMAGES, SUCH AS INCIDENTAL OR CONSEQUENTIAL DAMAGES, OR THE EXCLUSION OF IMPLIED WARRANTIES. ACCORDINGLY, SOME OF THE ABOVE LIMITATIONS AND EXCLUSIONS SET FORTH IN THIS SECTION MAY NOT APPLY TO YOU IN THEIR ENTIRETY TO THE EXTENT PROHIBITED BY APPLICABLE MANDATORY LAW. IN SUCH JURISDICTIONS, OUR LIABILITY SHALL BE LIMITED TO THE GREATEST EXTENT PERMITTED AND LAWFUL UNDER APPLICABLE LAW.</p>
 
-const handleActivation = (e) => {
-  if (e.keyCode === CMD && !STATE.cmd) STATE.cmd = true
-  if (e.keyCode === MOD && STATE.cmd && !STATE.mod) STATE.mod = true
-  if (e.keyCode === G_KEY && !STATE.g) STATE.g = true
+        <h2>8. Expansive Indemnification</h2>
+        <p>You hereby expressly, irrevocably, and unconditionally agree, to the maximum extent permitted by applicable law, to fully, completely, and effectively indemnify, defend, protect, and hold harmless Visiuun and Aleksandr, our affiliates, licensors, service providers, and our and their respective officers, directors, employees, agents, representatives, successors, and assigns (collectively, the "Indemnified Parties") from and against any and all claims, demands, actions, proceedings, investigations, liabilities, judgments, settlements, damages, losses, costs, and expenses (including, without limitation, reasonable attorneys' fees, legal costs, expert witness fees, investigation costs, settlement costs, and court costs), of any kind or nature whatsoever (collectively, "Claims"), arising out of, relating to, or in connection with any of the following, pertaining to your use of the Services, including both the Roblox game and the Archrose Discord server:</p>
+        <ol type="a">
+            <li>Your access to, use of, or misuse of the Services, including both the Roblox game and the Archrose Discord server.</li>
+            <li>Your conduct, activities, or interactions within the Services, whether compliant with these Terms or not, including within both the game and on the Discord server.</li>
+            <li>Your User Content (if applicable), including content shared in-game or on the Discord server, including, without limitation, any claims that your User Content infringes upon the rights of any third party or violates any applicable laws or platform rules.</li>
+            <li>Your violation, breach, or alleged violation or breach of these Terms, or any provision thereof, pertaining to your use of the Services.</li>
+            <li>Your violation of any rights of another party, including, without limitation, intellectual property rights, privacy rights, publicity rights, contractual rights, or other legal rights, arising from your use of the Services.</li>
+            <li>Your violation of any applicable laws, rules, regulations, statutes, ordinances, or legal requirements, whether local, provincial, territorial, national, international, Roblox platform rules, or Discord platform rules, arising from your use of the Services.</li>
+            <li>Any misrepresentation, false statement, or misleading information provided by you to the Developers in connection with the Services.</li>
+            <li>Any negligence, gross negligence, recklessness, willful misconduct, intentional tort, or other wrongful act or omission by you in connection with the Services or these Terms.</li>
+        </ol>
+        <p>This comprehensive indemnification obligation shall survive the termination of these Terms and your cessation of use of the Services indefinitely. You agree to cooperate fully and diligently as reasonably required by the Indemnified Parties in the defense of any Claim. The Developers reserve the right, at our own expense, to assume the exclusive defense and control of any matter otherwise subject to indemnification by you, in which event your obligation to indemnify the Indemnified Parties shall continue to apply, and you will remain obligated to cooperate fully in asserting any and all available defenses.</p>
 
+        <h2>9. Governing Law and Exclusive Jurisdiction</h2>
+        <p>These Terms shall be governed by, construed, and interpreted in accordance with the domestic laws of <strong>Canada</strong>, excluding its conflict of laws principles and the United Nations Convention on Contracts for the International Sale of Goods. Any dispute, controversy, claim, or cause of action arising out of or in connection with these Terms, your use of the Services, including both Archrose Roblox game and the Archrose Discord server, or any matter related hereto, including, without limitation, any question regarding the existence, validity, interpretation, breach, or termination of these Terms, shall be exclusively and irrevocably submitted to the sole and exclusive jurisdiction of the competent courts located in <strong>Canada</strong>. You hereby irrevocably consent to the personal jurisdiction of such courts and waive any objection based on forum non conveniens or any other jurisdictional grounds.</p>
 
-  if ((STATE.cmd && STATE.mod) || STATE.g) {
-    e.preventDefault()
-    confetti()
-    document.documentElement.style.setProperty('--active', 1)
-    autoRedirect();
-  }
-}
+        <h2>10. Contact Information and Communication Procedures</h2>
+        <p>For any inquiries, questions, concerns, feedback, or reports regarding these Terms of Service, Archrose, the Archrose Discord server, or any related matters, please contact us through the contact form available on our official website at visiuun.com or via email directly at visiuun@visiuun.com. We will endeavor to respond to your inquiries in a commercially reasonable timeframe, although we do not guarantee a specific response time or resolution. For urgent matters, please clearly indicate "URGENT" in your communication subject line.  Please note that routine gameplay-related questions or technical support requests for the Roblox game are generally best addressed through Roblox's official support channels or in-game help resources, if available. For Discord server related issues, please attempt to contact Discord server moderators or administrators first, if available, before contacting us directly for general inquiries.</p>
 
-const unload = (e) => {
-  if (e.keyCode === CMD || e.keyCode === MOD) STATE.cmd = STATE.mod = false
-    if (e.keyCode === G_KEY) STATE.g = false
-  document.documentElement.style.setProperty('--active', 0.6)
-}
+        <h2>11. Modifications and Amendments to Terms</h2>
+        <p>The Developers expressly reserve the absolute, unilateral, and unfettered right, at our sole and arbitrary discretion, to modify, amend, alter, update, or replace these Terms, in whole or in part, at any time, without any prior notice or obligation to provide advance notification to you or any other user.  We may, but are not obligated to, post a general notice of changes within Archrose (in-game), on the Archrose Discord server (announcement channel), on our website, or through other reasonable means of communication; however, we undertake no responsibility to provide individualized or direct notification to specific users.  The most current and controlling version of these Terms will be the version as posted within Archrose (in-game), on the Archrose Discord server (e.g., in a designated rules channel), or on our official website, and such updated version shall automatically supersede and replace all prior versions of these Terms, effective immediately upon posting, unless otherwise specified in the updated Terms.  It is your sole, individual, and ongoing responsibility to proactively and periodically review these Terms for any modifications or amendments. By continuing to access or use the Services, including both the Roblox game and the Archrose Discord server, in any manner whatsoever after any such revisions become effective, you explicitly, irrevocably, and unconditionally agree to be fully and legally bound by the revised Terms, in their entirety, without exception or reservation.  If you do not agree to the newly revised Terms, you must immediately and permanently cease all use of the Services, including both ceasing to play the Roblox game and leaving the Archrose Discord server. Your continued access to or use of the Services following the posting of any changes to these Terms will be conclusively deemed as your full, informed, and unequivocal acceptance of those changes, irrespective of whether you have actually reviewed them or are even aware of their existence.</p>
 
-document.body.addEventListener('keydown', handleActivation)
-document.body.addEventListener('keyup', unload)
+        <h2>12. No Guarantees, Assumption of Risk, and Voluntary Participation</h2>
+        <p><b>YOU HEREBY EXPRESSLY, KNOWINGLY, AND VOLUNTARILY ACKNOWLEDGE, UNDERSTAND, AND AGREE THAT YOUR ACCESS TO AND USE OF THE SERVICES, INCLUDING BOTH THE ARCHROSE ROBLOX GAME AND THE ARCHROSE DISCORD SERVER, IS ENTIRELY, SOLELY, AND EXCLUSIVELY AT YOUR OWN FREE WILL, CHOICE, AND RISK.</b> THE SERVICES ARE PROVIDED ON an "AS IS" basis, with all inherent limitations, imperfections, and potential risks, and without any guarantees, warranties, or assurances of any kind. You fully understand and accept that online games and associated online communities, by their very nature, inherently involve numerous and diverse risks, including, but not limited to, exposure to user-generated content, interactions with other online users whose conduct and behavior we cannot fully predict, monitor, or control across both game and Discord environments, technical malfunctions, software errors, game bugs, data loss, server instability on both platforms, service modifications, and potential changes to the Service environment, features, or availability, all of which are beyond our complete control.</p>
+        <p>YOU, AS THE USER, VOLUNTARILY, KNOWINGLY, AND INTELLIGENTLY ASSUME EACH AND EVERY ONE OF THESE INHERENT RISKS AND ALL OTHER RISKS ASSOCIATED WITH USING THE SERVICES, INCLUDING BOTH PLAYING ARCHROSE AND PARTICIPATING IN THE ARCHROSE DISCORD SERVER, WHETHER KNOWN OR UNKNOWN, FORESEEN OR UNFORESEEN, AND WHETHER SPECIFICALLY LISTED HEREIN OR NOT.  WE MAKE ABSOLUTELY NO PROMISES, WARRANTIES, REPRESENTATIONS, OR GUARANTEES OF ANY KIND, EXPRESS OR IMPLIED, REGARDING YOUR EXPERIENCE WITHIN THE SERVICES, YOUR LEVEL OF ENJOYMENT, YOUR INTERACTIONS WITH OTHER USERS ON EITHER PLATFORM, THE PERFORMANCE OF EITHER THE GAME OR THE DISCORD SERVER, OR ANY OTHER ASPECT OF THE SERVICES. WE EXPRESSLY, UNEQUIVOCALLY, AND IRREVOCABLY DISCLAIM ANY AND ALL RESPONSIBILITY AND LIABILITY FOR ANY NEGATIVE OUTCOMES, DAMAGES, LOSSES, INJURIES, COSTS, OR EXPENSES YOU MAY INCUR OR SUSTAIN, DIRECTLY OR INDIRECTLY, AS A RESULT OF OR IN CONNECTION WITH USING THE SERVICES, INCLUDING BOTH THE ARCHROSE ROBLOX GAME AND THE ARCHROSE DISCORD SERVER, TO THE ABSOLUTE FULLEST EXTENT PERMITTED BY APPLICABLE LAW. BY CHOOSING TO ACCESS AND USE THE SERVICES, YOU ARE AFFIRMATIVELY AND DELIBERATELY ACCEPTING ALL OF THESE INHERENT RISKS AND ARE UNEQUIVOCALLY AGREEING THAT THE DEVELOPERS ARE NOT, AND SHALL NOT BE, RESPONSIBLE OR LIABLE FOR ANY OF THEM, UNDER ANY CIRCUMSTANCES OR LEGAL THEORY.</p>
 
+        <h2>13. Entire Agreement</h2>
+        <p>These Terms of Service, together with the Archrose Privacy Policy, constitute the entire, complete, and exclusive agreement between you and Visiuun and Aleksandr concerning your use of the Services, including both the Archrose Roblox game and the Archrose Discord server, and supersede all prior and contemporaneous communications, representations, understandings, and agreements, whether oral or written, relating to the subject matter hereof.</p>
 
-const button = document.getElementById('myButton');
-button.addEventListener('click', autoRedirect);
+        <h2>14. Severability</h2>
+        <p>If any provision of these Terms is held to be invalid, illegal, or unenforceable by a court of competent jurisdiction, such provision shall be deemed severed from these Terms, and the remaining provisions of these Terms shall continue in full force and effect and shall be construed to give maximum effect to the original intent of the parties as reflected in these Terms.</p>
 
-// Initial Auto Redirect (after page load)
-autoRedirect();
-</script>
+        <h2>15. No Waiver</h2>
+        <p>No waiver of any term or condition set forth in these Terms shall be deemed a further or continuing waiver of such term or condition or a waiver of any other term or condition, and any failure of the Developers to assert a right or provision under these Terms shall not constitute a waiver of such right or provision. Any waiver of any provision of these Terms shall be effective only if in writing and signed by duly authorized representatives of Visiuun and Aleksandr.</p>
+
+        <h2>16. Headings</h2>
+        <p>The headings used in these Terms are included for convenience only and will not limit or otherwise affect the meaning or interpretation of these Terms.</p>
+
+        <h2>17. Language</h2>
+        <p>These Terms of Service are written in the English language. To the extent any translated version of these Terms conflicts with the English version, the English version shall prevail.</p>
+    </div>
+
+    <footer class="footer">
+        <p>© <span current-year="">20??</span> Archrose - Visiuun and Aleksandr. All rights reserved.</p>
+    </footer>
+<script src="https://visiuun.altervista.org/data/Scripts/JS/cookies.js"></script>
+<script src="https://visiuun.altervista.org/data/Scripts/JS/currentyear.js"></script>
+</body>
+</html>
