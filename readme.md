@@ -1,106 +1,93 @@
 <div align="center">
+  <!-- Header Image -->
   <a href="https://visiuun.com">
-    <img src="https://readme-typing-svg.herokuapp.com?font=JetBrains+Mono&size=30&pause=1000&color=F9A8D4&center=true&vCenter=true&width=600&lines=visiuun;python_developer;automation_specialist;digital_archivist" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&pause=1000&color=F9A8D4&center=true&vCenter=true&width=600&lines=Vis;Python+Developer+%2F+Reverse+Engineering;Automation+Enthusiast;Welcome+to+my+archive." alt="Typing SVG" />
   </a>
 </div>
 
 <br />
 
 <div align="center">
-  <!-- Clean, simple bio without the 'AI personality' -->
-  <p style="font-size: 15px; max-width: 600px; font-family: monospace; color: #999;">
-    Based in Italy. I write scripts to automate the boring stuff. My main focus is web scraping, bulk file management, and data preservation.
-  </p>
+  <!-- Badges -->
+  <a href="https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun">
+    <img src="https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun&left_color=black&right_color=F9A8D4&left_text=Visitors" alt="visitor badge"/>
+  </a>
+</div>
 
-  <!-- Socials -->
+<br />
+
+<div align="center" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <!-- Bio -->
+  <p style="font-size: 16px; max-width: 600px;">
+    <strong>Dev from Italy 🇮🇹</strong><br/>
+    I specialize in automation, scraping, and making computers do the boring work for me. My focus is on data preservation tools, reverse engineering, and Python scripting. If it can be automated, I'm probably writing a script for it right now.
+  </p>
+  
   <p>
-    <a href="mailto:visiuun@visiuun.com">
-      <img src="https://img.shields.io/badge/Email-visiuun%40visiuun.com-black?style=flat-square&logo=gmail&logoColor=F9A8D4&color=151515" alt="Email"/>
-    </a>
-    <a href="https://visiuun.com">
-      <img src="https://img.shields.io/badge/Website-visiuun.com-black?style=flat-square&logo=google-chrome&logoColor=F9A8D4&color=151515" alt="Website"/>
-    </a>
-    <a href="https://instagram.com/visiuun">
-      <img src="https://img.shields.io/badge/Instagram-@visiuun-black?style=flat-square&logo=instagram&logoColor=F9A8D4&color=151515" alt="Instagram"/>
-    </a>
+    <a href="mailto:visiuun@visiuun.com" style="color: #F9A8D4; font-weight: bold; text-decoration: none;">Email</a> •
+    <a href="https://visiuun.com" style="color: #F9A8D4; font-weight: bold; text-decoration: none;">Website</a> •
+    <a href="https://Instagram.com/visiuun" style="color: #F9A8D4; font-weight: bold; text-decoration: none;">Instagram</a>
   </p>
 </div>
 
 <br/>
 
-<!-- Tech Stack (Modern Icons) -->
+<!-- Stats Section -->
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,lua,cpp,git,mysql,html,css,js,vscode&theme=dark&perline=9" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=visiuun&theme=dark&hide_border=true&background=00000000&ring=F9A8D4&fire=F9A8D4&currStreakLabel=F9A8D4" height="150" alt="streak"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=visiuun&show_icons=true&count_private=true&theme=dark&hide_border=true&bg_color=00000000&title_color=F9A8D4&icon_color=F9A8D4&text_color=ffffff" height="150" alt="stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=visiuun&layout=compact&theme=dark&hide_border=true&bg_color=00000000&title_color=F9A8D4&text_color=ffffff" height="150" alt="langs"/>
 </div>
 
 <br/>
 
-<h3 align="center" style="color: #F9A8D4; font-family: monospace;">> SELECTED_REPOSITORIES</h3>
+<!-- Tech Stack -->
+<h3 align="center" style="color: #F9A8D4;">🛠️ Arsenal</h3>
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=python,lua,cpp,git,mysql,html,css,js&theme=dark" />
+</div>
+
+<br/>
+
+<!-- Projects -->
+<h3 align="center" style="color: #F9A8D4;">🌸 Featured Archives & Tools</h3>
 
 <div align="center">
-<table style="border-collapse: collapse; border: none; width: 100%;">
+<table style="border-collapse: collapse; border: none; width: 90%;">
   <tr>
-    <!-- ARCHIVAL SECTION -->
-    <td width="33%" valign="top" style="padding: 10px; border: 1px solid #30363d; border-radius: 6px;">
-      <h4 align="center" style="color: #F9A8D4;">📂 Scrapers & Archival</h4>
-      <ul style="list-style: none; padding: 0; font-size: 13px;">
-        <li style="margin-bottom: 8px;">
-          <a href="https://github.com/visiuun/Kemono.su-Downloader" style="color: #fff; font-weight: bold; text-decoration: none;">Kemono.su Downloader</a><br/>
-          <span style="color: #888;">Multi-threaded scraping tool for content backup.</span>
+    <!-- Column 1: Archival -->
+    <td width="50%" valign="top" style="padding: 10px;">
+      <h4 align="center" style="color: #F48FB1;">Data Preservation</h4>
+      <ul style="list-style: none; padding: 0; text-align: center;">
+        <li style="margin-bottom: 10px;">
+          <a href="https://github.com/visiuun/Kemono.su-Downloader" style="color: #F9A8D4; font-weight: bold; text-decoration: none;">Kemono.su-Downloader</a><br/>
+          <span style="font-size: 13px; color: #888;">Robust scraping tool for archival purposes.</span>
         </li>
-        <li style="margin-bottom: 8px;">
-          <a href="https://github.com/visiuun/Coomer.su-Downloader" style="color: #fff; font-weight: bold; text-decoration: none;">Coomer.su Downloader</a><br/>
-          <span style="color: #888;">Automated media retrieval script.</span>
+        <li style="margin-bottom: 10px;">
+          <a href="https://github.com/visiuun/Coomer.su-Downloader" style="color: #F9A8D4; font-weight: bold; text-decoration: none;">Coomer.su-Downloader</a><br/>
+          <span style="font-size: 13px; color: #888;">Automated content retrieval script.</span>
         </li>
-        <li style="margin-bottom: 8px;">
-          <a href="https://github.com/visiuun/PyR34-Downloader" style="color: #fff; font-weight: bold; text-decoration: none;">PyR34 Downloader</a><br/>
-          <span style="color: #888;">Tag-based bulk image preservation.</span>
-        </li>
-        <li>
-          <a href="https://github.com/visiuun/pic.re-downloader" style="color: #fff; font-weight: bold; text-decoration: none;">Pic.re Downloader</a><br/>
-          <span style="color: #888;">Simple host-specific extraction tool.</span>
+        <li style="margin-bottom: 10px;">
+          <a href="https://github.com/visiuun/PyR34-Downloader" style="color: #F9A8D4; font-weight: bold; text-decoration: none;">PyR34-Downloader</a><br/>
+          <span style="font-size: 13px; color: #888;">Bulk image preservation utility.</span>
         </li>
       </ul>
     </td>
-
-    <!-- SYSTEM & BULK SECTION -->
-    <td width="33%" valign="top" style="padding: 10px; border: 1px solid #30363d; border-radius: 6px;">
-      <h4 align="center" style="color: #F9A8D4;">⚙️ File Systems</h4>
-      <ul style="list-style: none; padding: 0; font-size: 13px;">
-        <li style="margin-bottom: 8px;">
-          <a href="https://github.com/visiuun/Bulk-folder-extractor" style="color: #fff; font-weight: bold; text-decoration: none;">Bulk Folder Extractor</a><br/>
-          <span style="color: #888;">Recursively moves files from subfolders to root.</span>
+    <!-- Column 2: Utilities -->
+    <td width="50%" valign="top" style="padding: 10px;">
+      <h4 align="center" style="color: #F48FB1;">System & Utilities</h4>
+      <ul style="list-style: none; padding: 0; text-align: center;">
+        <li style="margin-bottom: 10px;">
+          <a href="https://github.com/visiuun/VIS-Cypher-Advanced" style="color: #F9A8D4; font-weight: bold; text-decoration: none;">VIS-Cypher-Advanced</a><br/>
+          <span style="font-size: 13px; color: #888;">Custom encryption algorithm experiment.</span>
         </li>
-        <li style="margin-bottom: 8px;">
-          <a href="https://github.com/visiuun/Duplicate-files-deleter" style="color: #fff; font-weight: bold; text-decoration: none;">Duplicate Deleter</a><br/>
-          <span style="color: #888;">Hash-based duplicate cleaning utility.</span>
+        <li style="margin-bottom: 10px;">
+          <a href="https://github.com/visiuun/pc-info-gatherer" style="color: #F9A8D4; font-weight: bold; text-decoration: none;">PC-Info-Gatherer</a><br/>
+          <span style="font-size: 13px; color: #888;">System diagnostics and spec retrieval.</span>
         </li>
-        <li style="margin-bottom: 8px;">
-          <a href="https://github.com/visiuun/Archive-Extraction-Tool" style="color: #fff; font-weight: bold; text-decoration: none;">Archive Extraction Tool</a><br/>
-          <span style="color: #888;">Batch processing for compressed archives.</span>
-        </li>
-        <li>
-          <a href="https://github.com/visiuun/pc-info-gatherer" style="color: #fff; font-weight: bold; text-decoration: none;">PC Info Gatherer</a><br/>
-          <span style="color: #888;">Hardware specification export tool.</span>
-        </li>
-      </ul>
-    </td>
-
-    <!-- CREATIVE & MISC SECTION -->
-    <td width="33%" valign="top" style="padding: 10px; border: 1px solid #30363d; border-radius: 6px;">
-      <h4 align="center" style="color: #F9A8D4;">🔮 Experimental</h4>
-      <ul style="list-style: none; padding: 0; font-size: 13px;">
-        <li style="margin-bottom: 8px;">
-          <a href="https://github.com/visiuun/VIS-Cypher-Advanced" style="color: #fff; font-weight: bold; text-decoration: none;">VIS Cypher Advanced</a><br/>
-          <span style="color: #888;">Custom encryption algorithm implementation.</span>
-        </li>
-        <li style="margin-bottom: 8px;">
-          <a href="https://github.com/visiuun/Video-fryer" style="color: #fff; font-weight: bold; text-decoration: none;">Video Fryer</a><br/>
-          <span style="color: #888;">Datamoshing/compression artifact generator.</span>
-        </li>
-        <li>
-          <a href="https://github.com/visiuun/Image-fryer" style="color: #fff; font-weight: bold; text-decoration: none;">Image Fryer</a><br/>
-          <span style="color: #888;">Image processing for deliberate quality degradation.</span>
+        <li style="margin-bottom: 10px;">
+          <a href="https://github.com/visiuun/Video-fryer" style="color: #F9A8D4; font-weight: bold; text-decoration: none;">Video & Image Fryer</a><br/>
+          <span style="font-size: 13px; color: #888;">Datamoshing and artifact generation tools.</span>
         </li>
       </ul>
     </td>
@@ -110,25 +97,12 @@
 
 <br />
 
-<!-- Stats - Using Transparent Theme to blend in -->
 <div align="center">
-  <a href="https://github.com/visiuun">
-  <img src="https://github-readme-stats.vercel.app/api?username=visiuun&show_icons=true&count_private=true&theme=transparent&title_color=F9A8D4&icon_color=F9A8D4&text_color=999&bg_color=00000000&hide_border=true" height="160" alt="stats"/>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=visiuun&theme=transparent&background=00000000&ring=F9A8D4&fire=F9A8D4&currStreakLabel=F9A8D4&sideLabels=999&dates=999&hide_border=true" height="160" alt="streak"/>
-  </a>
+  <p style="font-size: 14px; color: #666;">
+    Currently learning: <strong>Reverse Engineering & Cryptography</strong>
+  </p>
 </div>
 
-<div align="center">
-  <a href="https://github.com/visiuun">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=visiuun&layout=compact&theme=transparent&title_color=F9A8D4&text_color=999&hide_border=true" height="160" alt="langs"/>
-  </a>
-</div>
-
-<br/>
-
-<!-- Footer Badge -->
-<div align="center">
-  <a href="https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun">
-    <img src="https://visitor-badge.laobi.icu/badge?page_id=visiuun.visiuun&left_color=151515&right_color=F9A8D4&left_text=Profile%20Visits" alt="visitor badge"/>
-  </a>
-</div>
+<!-- Activity Graph -->
+<!--START_SECTION:github_activity-->
+<!--END_SECTION:github_activity-->
