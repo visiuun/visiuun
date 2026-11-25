@@ -94,9 +94,9 @@ CREATIVE = [
     dict(repo="kiln", name="kiln", icon="docs/icon.png",
          platform="Windows 10 · 11",
          desc="A folder of an artist's images in, an Illustrious style LoRA out. Cleaning, tagging and training in one app."),
-    dict(repo="prism", name="Prism", icon=None, glyph="P",
-         platform="Windows · Python",
-         desc="GPU-accelerated bulk image and video compressor: NVENC, AV1, HEVC, JPEG XL, with an SSIM quality guard."),
+    dict(repo="prism", name="Prism", icon="prism.png",
+         platform="Windows · macOS · Linux",
+         desc="Bulk image and video compressor that uses your GPU and checks its own work: AV1, HEVC, JPEG XL, verified outputs."),
     dict(repo="vtagger", name="Vtagger", icon=None, glyph="V",
          platform="Windows · Python",
          desc="A local, GPU-accelerated AI artist tagger that learns your library, with autocomplete and per-artist search."),
@@ -111,22 +111,25 @@ MODS = [
          desc="Userplugins for Equicord and Testcord."),
 ]
 
+# Favicons live in web-icons/<slug>.png. icon: "glyph" recolours a white
+# favicon to the theme (other colours kept), "clip" fills the shape with it,
+# "plain" shows it as is (it already has its own badge shape).
 WEB = [
-    dict(slug="hana", name="Hana", url="hanabot.xyz", glyph="H",
+    dict(slug="hana", icon="clip", name="Hana", url="hanabot.xyz", glyph="H",
          desc="Discord bot with AI chat, moderation and a virtual stock market."),
-    dict(slug="fsb", name="FSB", url="visiuun.com/fsb", glyph="F",
+    dict(slug="fsb", icon="plain", name="FSB", url="visiuun.com/fsb", glyph="F",
          desc="X (Twitter) shadowban and reach tester."),
-    dict(slug="linky", name="Linky", url="linky.moe", glyph="L",
+    dict(slug="linky", icon="glyph", name="Linky", url="linky.moe", glyph="L",
          desc="Minimal link-in-bio pages with animated styling."),
-    dict(slug="boopme", name="BoopMe", url="visiuun.com/boopme", glyph="B",
+    dict(slug="boopme", icon="glyph", name="BoopMe", url="visiuun.com/boopme", glyph="B",
          desc="A tiny social network of daily streaks and boops."),
-    dict(slug="trakka", name="Trakka", url="visiuun.com/trakka", glyph="T",
+    dict(slug="trakka", icon="glyph", name="Trakka", url="visiuun.com/trakka", glyph="T",
          desc="A multitrack audio workstation in your browser."),
-    dict(slug="diff", name="Diff", url="visiuun.com/diff", glyph="D",
+    dict(slug="diff", icon="glyph", name="Diff", url="visiuun.com/diff", glyph="D",
          desc="AI-assisted diff and code merge workbench."),
-    dict(slug="speed", name="Speed", url="speed.visiuun.com", glyph="S",
+    dict(slug="speed", icon="glyph", name="Speed", url="speed.visiuun.com", glyph="S",
          desc="An ad-free speed test: download, upload, ping, jitter."),
-    dict(slug="meru", name="Meru", url="visiuun.com/meru", glyph="M",
+    dict(slug="meru", icon="plain", name="Meru", url="visiuun.com/meru", glyph="M",
          desc="A streaming app and animated episode player."),
 ]
 
@@ -688,8 +691,68 @@ def project_card(p: dict, idx: int, info: dict):
     save(p["repo"], c)
 
 
+def png_uri(im: Image.Image) -> str:
+    buf = io.BytesIO()
+    im.save(buf, "PNG", optimize=True)
+    return "data:image/png;base64," + base64.b64encode(buf.getvalue()).decode()
+
+
+def split_glyph(im: Image.Image):
+    """Splits a favicon into its white ink (returned as an alpha mask, to be
+    filled with a theme colour) and its accent colours (kept as is)."""
+    im = im.convert("RGBA")
+    ink = Image.new("RGBA", im.size, (255, 255, 255, 0))
+    colour = Image.new("RGBA", im.size, (0, 0, 0, 0))
+    ip, cp = ink.load(), colour.load()
+    for yy in range(im.size[1]):
+        for xx in range(im.size[0]):
+            r_, g_, b_, a_ = im.getpixel((xx, yy))
+            if not a_:
+                continue
+            neutral = max(r_, g_, b_) - min(r_, g_, b_) < 48
+            if neutral and min(r_, g_, b_) > 140:
+                ip[xx, yy] = (255, 255, 255, a_)
+            elif neutral and max(r_, g_, b_) < 110:
+                continue  # dark outlines only make sense on light ink; drop them
+            else:
+                cp[xx, yy] = (r_, g_, b_, a_)
+    has_colour = colour.getchannel("A").getbbox() is not None
+    return ink, (colour if has_colour else None)
+
+
+def shape_icon(c: Canvas, kind, cx, cy, r, accent, glyph_char, icon_mode=None, icon_file=None):
+    """An expressive shape holding a favicon, or the initial when there is none."""
+    im = None
+    if icon_file and Path(icon_file).exists():
+        im = Image.open(icon_file).convert("RGBA")
+    if im and icon_mode == "plain":
+        c.add(f'<image href="{png_uri(im.resize((round(4 * r), round(4 * r)), Image.LANCZOS))}" '
+              f'x="{cx - r:.1f}" y="{cy - r:.1f}" width="{2 * r:.1f}" height="{2 * r:.1f}"/>')
+        return
+    if im and icon_mode == "clip":
+        clip = c.uid("s")
+        c.add(f'<clipPath id="{clip}"><path d="{shape_path(kind, cx, cy, r)}"/></clipPath>')
+        c.add(f'<image href="{png_uri(im.resize((round(4 * r), round(4 * r)), Image.LANCZOS))}" '
+              f'x="{cx - r:.1f}" y="{cy - r:.1f}" width="{2 * r:.1f}" height="{2 * r:.1f}" '
+              f'clip-path="url(#{clip})" preserveAspectRatio="xMidYMid slice"/>')
+        return
+    c.add(shape(kind, cx, cy, r, accent + "c"))
+    if im and icon_mode == "glyph":
+        g = 1.1 * r  # the ink sits in the shape's safe zone
+        ink, colour = split_glyph(im.resize((round(2 * g), round(2 * g)), Image.LANCZOS))
+        m = c.uid("m")
+        box = f'x="{cx - g / 2:.1f}" y="{cy - g / 2:.1f}" width="{g:.1f}" height="{g:.1f}"'
+        c.add(f'<mask id="{m}" maskUnits="userSpaceOnUse" {box}><image href="{png_uri(ink)}" {box}/></mask>'
+              f'<rect {box} mask="url(#{m})" style="fill:var(--on{accent}c)"/>')
+        if colour:
+            c.add(f'<image href="{png_uri(colour)}" {box}/>')
+        return
+    size, _, _, wght = ts("headline_m", True)
+    c.text(cx, cy + size * .36, glyph_char, size, "on" + accent + "c", wght, anchor="middle")
+
+
 def compact_card(key: str, name: str, desc: str, glyph_char: str, idx: int, sub: str | None = None,
-                 info: dict | None = None):
+                 info: dict | None = None, icon_mode: str | None = None):
     W, H = 600, 184
     pad = 24 * DP
     accent = ACCENTS[idx % 3]
@@ -697,9 +760,8 @@ def compact_card(key: str, name: str, desc: str, glyph_char: str, idx: int, sub:
     filled_card(c, 0, 0, W, H)
     r = 32 * DP
     kind = CARD_SHAPES[idx % len(CARD_SHAPES)]
-    c.add(shape(kind, pad + r, H / 2, r, accent + "c"))
-    size, _, _, wght = ts("headline_m", True)
-    c.text(pad + r, H / 2 + size * .36, glyph_char, size, "on" + accent + "c", wght, anchor="middle")
+    icon_file = HERE / "web-icons" / f"{key.removeprefix('web-')}.png" if icon_mode else None
+    shape_icon(c, kind, pad + r, H / 2, r, accent, glyph_char, icon_mode, icon_file)
 
     x = pad + 2 * r + 16 * DP
     right = W - pad
@@ -918,7 +980,8 @@ def main():
     for i, m in enumerate(MODS):
         compact_card(m["repo"], m["name"], m["desc"], m["glyph"], i + 1, info=by_name.get(m["repo"], {}))
     for i, w in enumerate(WEB):
-        compact_card("web-" + w["slug"], w["name"], w["desc"], w["glyph"], i, sub=w["url"])
+        compact_card("web-" + w["slug"], w["name"], w["desc"], w["glyph"], i, sub=w["url"],
+                     icon_mode=w.get("icon"))
     footer()
 
 
